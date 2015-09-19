@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CameraLeadMovement.cs" />
      <Compile Include="Assets\Scripts\LinkMovement.cs" />
      <Compile Include="Assets\Scripts\ParseMetroidMap.cs" />
      <Compile Include="Assets\Scripts\ShowMap.cs" />

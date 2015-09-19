@@ -99,7 +99,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .800000012, y: .800000012, z: .200000003}
+  m_Size: {x: .949999988, y: .949999988, z: .200000003}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6386076
 MonoBehaviour:
@@ -117,6 +117,7 @@ MonoBehaviour:
   swordInstance: {fileID: 0}
   swordCooldown: 0
   currentDir: 110
+  positionCorrectParam: .0500000007
 --- !u!54 &6386077
 Rigidbody:
   m_ObjectHideFlags: 0

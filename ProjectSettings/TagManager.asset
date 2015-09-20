@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rupee
+  - Door
+  - LockedDoor
+  - Probe
   layers:
   - Default
   - TransparentFX

@@ -1,265 +1,265 @@
 fileFormatVersion: 2
-guid: 2665f3b71b7d6470fa2c16b42cfdf022
-timeCreated: 1442270866
+guid: 264241745d6794937aa27e4721841742
+timeCreated: 1442707321
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spriteMap_zelda_0
-    21300002: spriteMap_zelda_1
-    21300004: spriteMap_zelda_2
-    21300006: spriteMap_zelda_3
-    21300008: spriteMap_zelda_4
-    21300010: spriteMap_zelda_5
-    21300012: spriteMap_zelda_6
-    21300014: spriteMap_zelda_7
-    21300016: spriteMap_zelda_8
-    21300018: spriteMap_zelda_9
-    21300020: spriteMap_zelda_10
-    21300022: spriteMap_zelda_11
-    21300024: spriteMap_zelda_12
-    21300026: spriteMap_zelda_13
-    21300028: spriteMap_zelda_14
-    21300030: spriteMap_zelda_15
-    21300032: spriteMap_zelda_16
-    21300034: spriteMap_zelda_17
-    21300036: spriteMap_zelda_18
-    21300038: spriteMap_zelda_19
-    21300040: spriteMap_zelda_20
-    21300042: spriteMap_zelda_21
-    21300044: spriteMap_zelda_22
-    21300046: spriteMap_zelda_23
-    21300048: spriteMap_zelda_24
-    21300050: spriteMap_zelda_25
-    21300052: spriteMap_zelda_26
-    21300054: spriteMap_zelda_27
-    21300056: spriteMap_zelda_28
-    21300058: spriteMap_zelda_29
-    21300060: spriteMap_zelda_30
-    21300062: spriteMap_zelda_31
-    21300064: spriteMap_zelda_32
-    21300066: spriteMap_zelda_33
-    21300068: spriteMap_zelda_34
-    21300070: spriteMap_zelda_35
-    21300072: spriteMap_zelda_36
-    21300074: spriteMap_zelda_37
-    21300076: spriteMap_zelda_38
-    21300078: spriteMap_zelda_39
-    21300080: spriteMap_zelda_40
-    21300082: spriteMap_zelda_41
-    21300084: spriteMap_zelda_42
-    21300086: spriteMap_zelda_43
-    21300088: spriteMap_zelda_44
-    21300090: spriteMap_zelda_45
-    21300092: spriteMap_zelda_46
-    21300094: spriteMap_zelda_47
-    21300096: spriteMap_zelda_48
-    21300098: spriteMap_zelda_49
-    21300100: spriteMap_zelda_50
-    21300102: spriteMap_zelda_51
-    21300104: spriteMap_zelda_52
-    21300106: spriteMap_zelda_53
-    21300108: spriteMap_zelda_54
-    21300110: spriteMap_zelda_55
-    21300112: spriteMap_zelda_56
-    21300114: spriteMap_zelda_57
-    21300116: spriteMap_zelda_58
-    21300118: spriteMap_zelda_59
-    21300120: spriteMap_zelda_60
-    21300122: spriteMap_zelda_61
-    21300124: spriteMap_zelda_62
-    21300126: spriteMap_zelda_63
-    21300128: spriteMap_zelda_64
-    21300130: spriteMap_zelda_65
-    21300132: spriteMap_zelda_66
-    21300134: spriteMap_zelda_67
-    21300136: spriteMap_zelda_68
-    21300138: spriteMap_zelda_69
-    21300140: spriteMap_zelda_70
-    21300142: spriteMap_zelda_71
-    21300144: spriteMap_zelda_72
-    21300146: spriteMap_zelda_73
-    21300148: spriteMap_zelda_74
-    21300150: spriteMap_zelda_75
-    21300152: spriteMap_zelda_76
-    21300154: spriteMap_zelda_77
-    21300156: spriteMap_zelda_78
-    21300158: spriteMap_zelda_79
-    21300160: spriteMap_zelda_80
-    21300162: spriteMap_zelda_81
-    21300164: spriteMap_zelda_82
-    21300166: spriteMap_zelda_83
-    21300168: spriteMap_zelda_84
-    21300170: spriteMap_zelda_85
-    21300172: spriteMap_zelda_86
-    21300174: spriteMap_zelda_87
-    21300176: spriteMap_zelda_88
-    21300178: spriteMap_zelda_89
-    21300180: spriteMap_zelda_90
-    21300182: spriteMap_zelda_91
-    21300184: spriteMap_zelda_92
-    21300186: spriteMap_zelda_93
-    21300188: spriteMap_zelda_94
-    21300190: spriteMap_zelda_95
-    21300192: spriteMap_zelda_96
-    21300194: spriteMap_zelda_97
-    21300196: spriteMap_zelda_98
-    21300198: spriteMap_zelda_99
-    21300200: spriteMap_zelda_100
-    21300202: spriteMap_zelda_101
-    21300204: spriteMap_zelda_102
-    21300206: spriteMap_zelda_103
-    21300208: spriteMap_zelda_104
-    21300210: spriteMap_zelda_105
-    21300212: spriteMap_zelda_106
-    21300214: spriteMap_zelda_107
-    21300216: spriteMap_zelda_108
-    21300218: spriteMap_zelda_109
-    21300220: spriteMap_zelda_110
-    21300222: spriteMap_zelda_111
-    21300224: spriteMap_zelda_112
-    21300226: spriteMap_zelda_113
-    21300228: spriteMap_zelda_114
-    21300230: spriteMap_zelda_115
-    21300232: spriteMap_zelda_116
-    21300234: spriteMap_zelda_117
-    21300236: spriteMap_zelda_118
-    21300238: spriteMap_zelda_119
-    21300240: spriteMap_zelda_120
-    21300242: spriteMap_zelda_121
-    21300244: spriteMap_zelda_122
-    21300246: spriteMap_zelda_123
-    21300248: spriteMap_zelda_124
-    21300250: spriteMap_zelda_125
-    21300252: spriteMap_zelda_126
-    21300254: spriteMap_zelda_127
-    21300256: spriteMap_zelda_128
-    21300258: spriteMap_zelda_129
-    21300260: spriteMap_zelda_130
-    21300262: spriteMap_zelda_131
-    21300264: spriteMap_zelda_132
-    21300266: spriteMap_zelda_133
-    21300268: spriteMap_zelda_134
-    21300270: spriteMap_zelda_135
-    21300272: spriteMap_zelda_136
-    21300274: spriteMap_zelda_137
-    21300276: spriteMap_zelda_138
-    21300278: spriteMap_zelda_139
-    21300280: spriteMap_zelda_140
-    21300282: spriteMap_zelda_141
-    21300284: spriteMap_zelda_142
-    21300286: spriteMap_zelda_143
-    21300288: spriteMap_zelda_144
-    21300290: spriteMap_zelda_145
-    21300292: spriteMap_zelda_146
-    21300294: spriteMap_zelda_147
-    21300296: spriteMap_zelda_148
-    21300298: spriteMap_zelda_149
-    21300300: spriteMap_zelda_150
-    21300302: spriteMap_zelda_151
-    21300304: spriteMap_zelda_152
-    21300306: spriteMap_zelda_153
-    21300308: spriteMap_zelda_154
-    21300310: spriteMap_zelda_155
-    21300312: spriteMap_zelda_156
-    21300314: spriteMap_zelda_157
-    21300316: spriteMap_zelda_158
-    21300318: spriteMap_zelda_159
-    21300320: spriteMap_zelda_160
-    21300322: spriteMap_zelda_161
-    21300324: spriteMap_zelda_162
-    21300326: spriteMap_zelda_163
-    21300328: spriteMap_zelda_164
-    21300330: spriteMap_zelda_165
-    21300332: spriteMap_zelda_166
-    21300334: spriteMap_zelda_167
-    21300336: spriteMap_zelda_168
-    21300338: spriteMap_zelda_169
-    21300340: spriteMap_zelda_170
-    21300342: spriteMap_zelda_171
-    21300344: spriteMap_zelda_172
-    21300346: spriteMap_zelda_173
-    21300348: spriteMap_zelda_174
-    21300350: spriteMap_zelda_175
-    21300352: spriteMap_zelda_176
-    21300354: spriteMap_zelda_177
-    21300356: spriteMap_zelda_178
-    21300358: spriteMap_zelda_179
-    21300360: spriteMap_zelda_180
-    21300362: spriteMap_zelda_181
-    21300364: spriteMap_zelda_182
-    21300366: spriteMap_zelda_183
-    21300368: spriteMap_zelda_184
-    21300370: spriteMap_zelda_185
-    21300372: spriteMap_zelda_186
-    21300374: spriteMap_zelda_187
-    21300376: spriteMap_zelda_188
-    21300378: spriteMap_zelda_189
-    21300380: spriteMap_zelda_190
-    21300382: spriteMap_zelda_191
-    21300384: spriteMap_zelda_192
-    21300386: spriteMap_zelda_193
-    21300388: spriteMap_zelda_194
-    21300390: spriteMap_zelda_195
-    21300392: spriteMap_zelda_196
-    21300394: spriteMap_zelda_197
-    21300396: spriteMap_zelda_198
-    21300398: spriteMap_zelda_199
-    21300400: spriteMap_zelda_200
-    21300402: spriteMap_zelda_201
-    21300404: spriteMap_zelda_202
-    21300406: spriteMap_zelda_203
-    21300408: spriteMap_zelda_204
-    21300410: spriteMap_zelda_205
-    21300412: spriteMap_zelda_206
-    21300414: spriteMap_zelda_207
-    21300416: spriteMap_zelda_208
-    21300418: spriteMap_zelda_209
-    21300420: spriteMap_zelda_210
-    21300422: spriteMap_zelda_211
-    21300424: spriteMap_zelda_212
-    21300426: spriteMap_zelda_213
-    21300428: spriteMap_zelda_214
-    21300430: spriteMap_zelda_215
-    21300432: spriteMap_zelda_216
-    21300434: spriteMap_zelda_217
-    21300436: spriteMap_zelda_218
-    21300438: spriteMap_zelda_219
-    21300440: spriteMap_zelda_220
-    21300442: spriteMap_zelda_221
-    21300444: spriteMap_zelda_222
-    21300446: spriteMap_zelda_223
-    21300448: spriteMap_zelda_224
-    21300450: spriteMap_zelda_225
-    21300452: spriteMap_zelda_226
-    21300454: spriteMap_zelda_227
-    21300456: spriteMap_zelda_228
-    21300458: spriteMap_zelda_229
-    21300460: spriteMap_zelda_230
-    21300462: spriteMap_zelda_231
-    21300464: spriteMap_zelda_232
-    21300466: spriteMap_zelda_233
-    21300468: spriteMap_zelda_234
-    21300470: spriteMap_zelda_235
-    21300472: spriteMap_zelda_236
-    21300474: spriteMap_zelda_237
-    21300476: spriteMap_zelda_238
-    21300478: spriteMap_zelda_239
-    21300480: spriteMap_zelda_240
-    21300482: spriteMap_zelda_241
-    21300484: spriteMap_zelda_242
-    21300486: spriteMap_zelda_243
-    21300488: spriteMap_zelda_244
-    21300490: spriteMap_zelda_245
-    21300492: spriteMap_zelda_246
-    21300494: spriteMap_zelda_247
-    21300496: spriteMap_zelda_248
-    21300498: spriteMap_zelda_249
-    21300500: spriteMap_zelda_250
-    21300502: spriteMap_zelda_251
-    21300504: spriteMap_zelda_252
-    21300506: spriteMap_zelda_253
-    21300508: spriteMap_zelda_254
-    21300510: spriteMap_zelda_255
+    21300000: spriteMap_0
+    21300002: spriteMap_1
+    21300004: spriteMap_2
+    21300006: spriteMap_3
+    21300008: spriteMap_4
+    21300010: spriteMap_5
+    21300012: spriteMap_6
+    21300014: spriteMap_7
+    21300016: spriteMap_8
+    21300018: spriteMap_9
+    21300020: spriteMap_10
+    21300022: spriteMap_11
+    21300024: spriteMap_12
+    21300026: spriteMap_13
+    21300028: spriteMap_14
+    21300030: spriteMap_15
+    21300032: spriteMap_16
+    21300034: spriteMap_17
+    21300036: spriteMap_18
+    21300038: spriteMap_19
+    21300040: spriteMap_20
+    21300042: spriteMap_21
+    21300044: spriteMap_22
+    21300046: spriteMap_23
+    21300048: spriteMap_24
+    21300050: spriteMap_25
+    21300052: spriteMap_26
+    21300054: spriteMap_27
+    21300056: spriteMap_28
+    21300058: spriteMap_29
+    21300060: spriteMap_30
+    21300062: spriteMap_31
+    21300064: spriteMap_32
+    21300066: spriteMap_33
+    21300068: spriteMap_34
+    21300070: spriteMap_35
+    21300072: spriteMap_36
+    21300074: spriteMap_37
+    21300076: spriteMap_38
+    21300078: spriteMap_39
+    21300080: spriteMap_40
+    21300082: spriteMap_41
+    21300084: spriteMap_42
+    21300086: spriteMap_43
+    21300088: spriteMap_44
+    21300090: spriteMap_45
+    21300092: spriteMap_46
+    21300094: spriteMap_47
+    21300096: spriteMap_48
+    21300098: spriteMap_49
+    21300100: spriteMap_50
+    21300102: spriteMap_51
+    21300104: spriteMap_52
+    21300106: spriteMap_53
+    21300108: spriteMap_54
+    21300110: spriteMap_55
+    21300112: spriteMap_56
+    21300114: spriteMap_57
+    21300116: spriteMap_58
+    21300118: spriteMap_59
+    21300120: spriteMap_60
+    21300122: spriteMap_61
+    21300124: spriteMap_62
+    21300126: spriteMap_63
+    21300128: spriteMap_64
+    21300130: spriteMap_65
+    21300132: spriteMap_66
+    21300134: spriteMap_67
+    21300136: spriteMap_68
+    21300138: spriteMap_69
+    21300140: spriteMap_70
+    21300142: spriteMap_71
+    21300144: spriteMap_72
+    21300146: spriteMap_73
+    21300148: spriteMap_74
+    21300150: spriteMap_75
+    21300152: spriteMap_76
+    21300154: spriteMap_77
+    21300156: spriteMap_78
+    21300158: spriteMap_79
+    21300160: spriteMap_80
+    21300162: spriteMap_81
+    21300164: spriteMap_82
+    21300166: spriteMap_83
+    21300168: spriteMap_84
+    21300170: spriteMap_85
+    21300172: spriteMap_86
+    21300174: spriteMap_87
+    21300176: spriteMap_88
+    21300178: spriteMap_89
+    21300180: spriteMap_90
+    21300182: spriteMap_91
+    21300184: spriteMap_92
+    21300186: spriteMap_93
+    21300188: spriteMap_94
+    21300190: spriteMap_95
+    21300192: spriteMap_96
+    21300194: spriteMap_97
+    21300196: spriteMap_98
+    21300198: spriteMap_99
+    21300200: spriteMap_100
+    21300202: spriteMap_101
+    21300204: spriteMap_102
+    21300206: spriteMap_103
+    21300208: spriteMap_104
+    21300210: spriteMap_105
+    21300212: spriteMap_106
+    21300214: spriteMap_107
+    21300216: spriteMap_108
+    21300218: spriteMap_109
+    21300220: spriteMap_110
+    21300222: spriteMap_111
+    21300224: spriteMap_112
+    21300226: spriteMap_113
+    21300228: spriteMap_114
+    21300230: spriteMap_115
+    21300232: spriteMap_116
+    21300234: spriteMap_117
+    21300236: spriteMap_118
+    21300238: spriteMap_119
+    21300240: spriteMap_120
+    21300242: spriteMap_121
+    21300244: spriteMap_122
+    21300246: spriteMap_123
+    21300248: spriteMap_124
+    21300250: spriteMap_125
+    21300252: spriteMap_126
+    21300254: spriteMap_127
+    21300256: spriteMap_128
+    21300258: spriteMap_129
+    21300260: spriteMap_130
+    21300262: spriteMap_131
+    21300264: spriteMap_132
+    21300266: spriteMap_133
+    21300268: spriteMap_134
+    21300270: spriteMap_135
+    21300272: spriteMap_136
+    21300274: spriteMap_137
+    21300276: spriteMap_138
+    21300278: spriteMap_139
+    21300280: spriteMap_140
+    21300282: spriteMap_141
+    21300284: spriteMap_142
+    21300286: spriteMap_143
+    21300288: spriteMap_144
+    21300290: spriteMap_145
+    21300292: spriteMap_146
+    21300294: spriteMap_147
+    21300296: spriteMap_148
+    21300298: spriteMap_149
+    21300300: spriteMap_150
+    21300302: spriteMap_151
+    21300304: spriteMap_152
+    21300306: spriteMap_153
+    21300308: spriteMap_154
+    21300310: spriteMap_155
+    21300312: spriteMap_156
+    21300314: spriteMap_157
+    21300316: spriteMap_158
+    21300318: spriteMap_159
+    21300320: spriteMap_160
+    21300322: spriteMap_161
+    21300324: spriteMap_162
+    21300326: spriteMap_163
+    21300328: spriteMap_164
+    21300330: spriteMap_165
+    21300332: spriteMap_166
+    21300334: spriteMap_167
+    21300336: spriteMap_168
+    21300338: spriteMap_169
+    21300340: spriteMap_170
+    21300342: spriteMap_171
+    21300344: spriteMap_172
+    21300346: spriteMap_173
+    21300348: spriteMap_174
+    21300350: spriteMap_175
+    21300352: spriteMap_176
+    21300354: spriteMap_177
+    21300356: spriteMap_178
+    21300358: spriteMap_179
+    21300360: spriteMap_180
+    21300362: spriteMap_181
+    21300364: spriteMap_182
+    21300366: spriteMap_183
+    21300368: spriteMap_184
+    21300370: spriteMap_185
+    21300372: spriteMap_186
+    21300374: spriteMap_187
+    21300376: spriteMap_188
+    21300378: spriteMap_189
+    21300380: spriteMap_190
+    21300382: spriteMap_191
+    21300384: spriteMap_192
+    21300386: spriteMap_193
+    21300388: spriteMap_194
+    21300390: spriteMap_195
+    21300392: spriteMap_196
+    21300394: spriteMap_197
+    21300396: spriteMap_198
+    21300398: spriteMap_199
+    21300400: spriteMap_200
+    21300402: spriteMap_201
+    21300404: spriteMap_202
+    21300406: spriteMap_203
+    21300408: spriteMap_204
+    21300410: spriteMap_205
+    21300412: spriteMap_206
+    21300414: spriteMap_207
+    21300416: spriteMap_208
+    21300418: spriteMap_209
+    21300420: spriteMap_210
+    21300422: spriteMap_211
+    21300424: spriteMap_212
+    21300426: spriteMap_213
+    21300428: spriteMap_214
+    21300430: spriteMap_215
+    21300432: spriteMap_216
+    21300434: spriteMap_217
+    21300436: spriteMap_218
+    21300438: spriteMap_219
+    21300440: spriteMap_220
+    21300442: spriteMap_221
+    21300444: spriteMap_222
+    21300446: spriteMap_223
+    21300448: spriteMap_224
+    21300450: spriteMap_225
+    21300452: spriteMap_226
+    21300454: spriteMap_227
+    21300456: spriteMap_228
+    21300458: spriteMap_229
+    21300460: spriteMap_230
+    21300462: spriteMap_231
+    21300464: spriteMap_232
+    21300466: spriteMap_233
+    21300468: spriteMap_234
+    21300470: spriteMap_235
+    21300472: spriteMap_236
+    21300474: spriteMap_237
+    21300476: spriteMap_238
+    21300478: spriteMap_239
+    21300480: spriteMap_240
+    21300482: spriteMap_241
+    21300484: spriteMap_242
+    21300486: spriteMap_243
+    21300488: spriteMap_244
+    21300490: spriteMap_245
+    21300492: spriteMap_246
+    21300494: spriteMap_247
+    21300496: spriteMap_248
+    21300498: spriteMap_249
+    21300500: spriteMap_250
+    21300502: spriteMap_251
+    21300504: spriteMap_252
+    21300506: spriteMap_253
+    21300508: spriteMap_254
+    21300510: spriteMap_255
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -283,7 +283,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -306,7 +306,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: spriteMap_zelda_0
+    - name: spriteMap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -316,7 +316,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_1
+    - name: spriteMap_1
       rect:
         serializedVersion: 2
         x: 16
@@ -326,7 +326,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_2
+    - name: spriteMap_2
       rect:
         serializedVersion: 2
         x: 32
@@ -336,7 +336,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_3
+    - name: spriteMap_3
       rect:
         serializedVersion: 2
         x: 48
@@ -346,7 +346,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_4
+    - name: spriteMap_4
       rect:
         serializedVersion: 2
         x: 64
@@ -356,7 +356,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_5
+    - name: spriteMap_5
       rect:
         serializedVersion: 2
         x: 80
@@ -366,7 +366,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_6
+    - name: spriteMap_6
       rect:
         serializedVersion: 2
         x: 96
@@ -376,7 +376,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_7
+    - name: spriteMap_7
       rect:
         serializedVersion: 2
         x: 112
@@ -386,7 +386,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_8
+    - name: spriteMap_8
       rect:
         serializedVersion: 2
         x: 128
@@ -396,7 +396,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_9
+    - name: spriteMap_9
       rect:
         serializedVersion: 2
         x: 144
@@ -406,7 +406,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_10
+    - name: spriteMap_10
       rect:
         serializedVersion: 2
         x: 160
@@ -416,7 +416,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_11
+    - name: spriteMap_11
       rect:
         serializedVersion: 2
         x: 176
@@ -426,7 +426,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_12
+    - name: spriteMap_12
       rect:
         serializedVersion: 2
         x: 192
@@ -436,7 +436,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_13
+    - name: spriteMap_13
       rect:
         serializedVersion: 2
         x: 208
@@ -446,7 +446,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_14
+    - name: spriteMap_14
       rect:
         serializedVersion: 2
         x: 224
@@ -456,7 +456,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_15
+    - name: spriteMap_15
       rect:
         serializedVersion: 2
         x: 240
@@ -466,7 +466,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_16
+    - name: spriteMap_16
       rect:
         serializedVersion: 2
         x: 0
@@ -476,7 +476,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_17
+    - name: spriteMap_17
       rect:
         serializedVersion: 2
         x: 16
@@ -486,7 +486,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_18
+    - name: spriteMap_18
       rect:
         serializedVersion: 2
         x: 32
@@ -496,7 +496,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_19
+    - name: spriteMap_19
       rect:
         serializedVersion: 2
         x: 48
@@ -506,7 +506,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_20
+    - name: spriteMap_20
       rect:
         serializedVersion: 2
         x: 64
@@ -516,7 +516,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_21
+    - name: spriteMap_21
       rect:
         serializedVersion: 2
         x: 80
@@ -526,7 +526,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_22
+    - name: spriteMap_22
       rect:
         serializedVersion: 2
         x: 96
@@ -536,7 +536,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_23
+    - name: spriteMap_23
       rect:
         serializedVersion: 2
         x: 112
@@ -546,7 +546,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_24
+    - name: spriteMap_24
       rect:
         serializedVersion: 2
         x: 128
@@ -556,7 +556,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_25
+    - name: spriteMap_25
       rect:
         serializedVersion: 2
         x: 144
@@ -566,7 +566,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_26
+    - name: spriteMap_26
       rect:
         serializedVersion: 2
         x: 160
@@ -576,7 +576,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_27
+    - name: spriteMap_27
       rect:
         serializedVersion: 2
         x: 176
@@ -586,7 +586,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_28
+    - name: spriteMap_28
       rect:
         serializedVersion: 2
         x: 192
@@ -596,7 +596,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_29
+    - name: spriteMap_29
       rect:
         serializedVersion: 2
         x: 208
@@ -606,7 +606,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_30
+    - name: spriteMap_30
       rect:
         serializedVersion: 2
         x: 224
@@ -616,7 +616,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_31
+    - name: spriteMap_31
       rect:
         serializedVersion: 2
         x: 240
@@ -626,7 +626,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_32
+    - name: spriteMap_32
       rect:
         serializedVersion: 2
         x: 0
@@ -636,7 +636,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_33
+    - name: spriteMap_33
       rect:
         serializedVersion: 2
         x: 16
@@ -646,7 +646,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_34
+    - name: spriteMap_34
       rect:
         serializedVersion: 2
         x: 32
@@ -656,7 +656,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_35
+    - name: spriteMap_35
       rect:
         serializedVersion: 2
         x: 48
@@ -666,7 +666,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_36
+    - name: spriteMap_36
       rect:
         serializedVersion: 2
         x: 64
@@ -676,7 +676,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_37
+    - name: spriteMap_37
       rect:
         serializedVersion: 2
         x: 80
@@ -686,7 +686,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_38
+    - name: spriteMap_38
       rect:
         serializedVersion: 2
         x: 96
@@ -696,7 +696,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_39
+    - name: spriteMap_39
       rect:
         serializedVersion: 2
         x: 112
@@ -706,7 +706,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_40
+    - name: spriteMap_40
       rect:
         serializedVersion: 2
         x: 128
@@ -716,7 +716,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_41
+    - name: spriteMap_41
       rect:
         serializedVersion: 2
         x: 144
@@ -726,7 +726,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_42
+    - name: spriteMap_42
       rect:
         serializedVersion: 2
         x: 160
@@ -736,7 +736,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_43
+    - name: spriteMap_43
       rect:
         serializedVersion: 2
         x: 176
@@ -746,7 +746,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_44
+    - name: spriteMap_44
       rect:
         serializedVersion: 2
         x: 192
@@ -756,7 +756,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_45
+    - name: spriteMap_45
       rect:
         serializedVersion: 2
         x: 208
@@ -766,7 +766,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_46
+    - name: spriteMap_46
       rect:
         serializedVersion: 2
         x: 224
@@ -776,7 +776,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_47
+    - name: spriteMap_47
       rect:
         serializedVersion: 2
         x: 240
@@ -786,7 +786,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_48
+    - name: spriteMap_48
       rect:
         serializedVersion: 2
         x: 0
@@ -796,7 +796,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_49
+    - name: spriteMap_49
       rect:
         serializedVersion: 2
         x: 16
@@ -806,7 +806,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_50
+    - name: spriteMap_50
       rect:
         serializedVersion: 2
         x: 32
@@ -816,7 +816,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_51
+    - name: spriteMap_51
       rect:
         serializedVersion: 2
         x: 48
@@ -826,7 +826,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_52
+    - name: spriteMap_52
       rect:
         serializedVersion: 2
         x: 64
@@ -836,7 +836,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_53
+    - name: spriteMap_53
       rect:
         serializedVersion: 2
         x: 80
@@ -846,7 +846,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_54
+    - name: spriteMap_54
       rect:
         serializedVersion: 2
         x: 96
@@ -856,7 +856,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_55
+    - name: spriteMap_55
       rect:
         serializedVersion: 2
         x: 112
@@ -866,7 +866,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_56
+    - name: spriteMap_56
       rect:
         serializedVersion: 2
         x: 128
@@ -876,7 +876,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_57
+    - name: spriteMap_57
       rect:
         serializedVersion: 2
         x: 144
@@ -886,7 +886,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_58
+    - name: spriteMap_58
       rect:
         serializedVersion: 2
         x: 160
@@ -896,7 +896,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_59
+    - name: spriteMap_59
       rect:
         serializedVersion: 2
         x: 176
@@ -906,7 +906,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_60
+    - name: spriteMap_60
       rect:
         serializedVersion: 2
         x: 192
@@ -916,7 +916,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_61
+    - name: spriteMap_61
       rect:
         serializedVersion: 2
         x: 208
@@ -926,7 +926,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_62
+    - name: spriteMap_62
       rect:
         serializedVersion: 2
         x: 224
@@ -936,7 +936,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_63
+    - name: spriteMap_63
       rect:
         serializedVersion: 2
         x: 240
@@ -946,7 +946,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_64
+    - name: spriteMap_64
       rect:
         serializedVersion: 2
         x: 0
@@ -956,7 +956,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_65
+    - name: spriteMap_65
       rect:
         serializedVersion: 2
         x: 16
@@ -966,7 +966,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_66
+    - name: spriteMap_66
       rect:
         serializedVersion: 2
         x: 32
@@ -976,7 +976,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_67
+    - name: spriteMap_67
       rect:
         serializedVersion: 2
         x: 48
@@ -986,7 +986,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_68
+    - name: spriteMap_68
       rect:
         serializedVersion: 2
         x: 64
@@ -996,7 +996,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_69
+    - name: spriteMap_69
       rect:
         serializedVersion: 2
         x: 80
@@ -1006,7 +1006,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_70
+    - name: spriteMap_70
       rect:
         serializedVersion: 2
         x: 96
@@ -1016,7 +1016,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_71
+    - name: spriteMap_71
       rect:
         serializedVersion: 2
         x: 112
@@ -1026,7 +1026,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_72
+    - name: spriteMap_72
       rect:
         serializedVersion: 2
         x: 128
@@ -1036,7 +1036,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_73
+    - name: spriteMap_73
       rect:
         serializedVersion: 2
         x: 144
@@ -1046,7 +1046,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_74
+    - name: spriteMap_74
       rect:
         serializedVersion: 2
         x: 160
@@ -1056,7 +1056,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_75
+    - name: spriteMap_75
       rect:
         serializedVersion: 2
         x: 176
@@ -1066,7 +1066,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_76
+    - name: spriteMap_76
       rect:
         serializedVersion: 2
         x: 192
@@ -1076,7 +1076,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_77
+    - name: spriteMap_77
       rect:
         serializedVersion: 2
         x: 208
@@ -1086,7 +1086,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_78
+    - name: spriteMap_78
       rect:
         serializedVersion: 2
         x: 224
@@ -1096,7 +1096,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_79
+    - name: spriteMap_79
       rect:
         serializedVersion: 2
         x: 240
@@ -1106,7 +1106,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_80
+    - name: spriteMap_80
       rect:
         serializedVersion: 2
         x: 0
@@ -1116,7 +1116,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_81
+    - name: spriteMap_81
       rect:
         serializedVersion: 2
         x: 16
@@ -1126,7 +1126,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_82
+    - name: spriteMap_82
       rect:
         serializedVersion: 2
         x: 32
@@ -1136,7 +1136,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_83
+    - name: spriteMap_83
       rect:
         serializedVersion: 2
         x: 48
@@ -1146,7 +1146,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_84
+    - name: spriteMap_84
       rect:
         serializedVersion: 2
         x: 64
@@ -1156,7 +1156,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_85
+    - name: spriteMap_85
       rect:
         serializedVersion: 2
         x: 80
@@ -1166,7 +1166,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_86
+    - name: spriteMap_86
       rect:
         serializedVersion: 2
         x: 96
@@ -1176,7 +1176,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_87
+    - name: spriteMap_87
       rect:
         serializedVersion: 2
         x: 112
@@ -1186,7 +1186,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_88
+    - name: spriteMap_88
       rect:
         serializedVersion: 2
         x: 128
@@ -1196,7 +1196,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_89
+    - name: spriteMap_89
       rect:
         serializedVersion: 2
         x: 144
@@ -1206,7 +1206,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_90
+    - name: spriteMap_90
       rect:
         serializedVersion: 2
         x: 160
@@ -1216,7 +1216,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_91
+    - name: spriteMap_91
       rect:
         serializedVersion: 2
         x: 176
@@ -1226,7 +1226,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_92
+    - name: spriteMap_92
       rect:
         serializedVersion: 2
         x: 192
@@ -1236,7 +1236,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_93
+    - name: spriteMap_93
       rect:
         serializedVersion: 2
         x: 208
@@ -1246,7 +1246,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_94
+    - name: spriteMap_94
       rect:
         serializedVersion: 2
         x: 224
@@ -1256,7 +1256,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_95
+    - name: spriteMap_95
       rect:
         serializedVersion: 2
         x: 240
@@ -1266,7 +1266,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_96
+    - name: spriteMap_96
       rect:
         serializedVersion: 2
         x: 0
@@ -1276,7 +1276,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_97
+    - name: spriteMap_97
       rect:
         serializedVersion: 2
         x: 16
@@ -1286,7 +1286,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_98
+    - name: spriteMap_98
       rect:
         serializedVersion: 2
         x: 32
@@ -1296,7 +1296,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_99
+    - name: spriteMap_99
       rect:
         serializedVersion: 2
         x: 48
@@ -1306,7 +1306,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_100
+    - name: spriteMap_100
       rect:
         serializedVersion: 2
         x: 64
@@ -1316,7 +1316,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_101
+    - name: spriteMap_101
       rect:
         serializedVersion: 2
         x: 80
@@ -1326,7 +1326,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_102
+    - name: spriteMap_102
       rect:
         serializedVersion: 2
         x: 96
@@ -1336,7 +1336,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_103
+    - name: spriteMap_103
       rect:
         serializedVersion: 2
         x: 112
@@ -1346,7 +1346,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_104
+    - name: spriteMap_104
       rect:
         serializedVersion: 2
         x: 128
@@ -1356,7 +1356,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_105
+    - name: spriteMap_105
       rect:
         serializedVersion: 2
         x: 144
@@ -1366,7 +1366,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_106
+    - name: spriteMap_106
       rect:
         serializedVersion: 2
         x: 160
@@ -1376,7 +1376,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_107
+    - name: spriteMap_107
       rect:
         serializedVersion: 2
         x: 176
@@ -1386,7 +1386,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_108
+    - name: spriteMap_108
       rect:
         serializedVersion: 2
         x: 192
@@ -1396,7 +1396,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_109
+    - name: spriteMap_109
       rect:
         serializedVersion: 2
         x: 208
@@ -1406,7 +1406,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_110
+    - name: spriteMap_110
       rect:
         serializedVersion: 2
         x: 224
@@ -1416,7 +1416,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_111
+    - name: spriteMap_111
       rect:
         serializedVersion: 2
         x: 240
@@ -1426,7 +1426,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_112
+    - name: spriteMap_112
       rect:
         serializedVersion: 2
         x: 0
@@ -1436,7 +1436,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_113
+    - name: spriteMap_113
       rect:
         serializedVersion: 2
         x: 16
@@ -1446,7 +1446,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_114
+    - name: spriteMap_114
       rect:
         serializedVersion: 2
         x: 32
@@ -1456,7 +1456,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_115
+    - name: spriteMap_115
       rect:
         serializedVersion: 2
         x: 48
@@ -1466,7 +1466,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_116
+    - name: spriteMap_116
       rect:
         serializedVersion: 2
         x: 64
@@ -1476,7 +1476,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_117
+    - name: spriteMap_117
       rect:
         serializedVersion: 2
         x: 80
@@ -1486,7 +1486,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_118
+    - name: spriteMap_118
       rect:
         serializedVersion: 2
         x: 96
@@ -1496,7 +1496,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_119
+    - name: spriteMap_119
       rect:
         serializedVersion: 2
         x: 112
@@ -1506,7 +1506,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_120
+    - name: spriteMap_120
       rect:
         serializedVersion: 2
         x: 128
@@ -1516,7 +1516,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_121
+    - name: spriteMap_121
       rect:
         serializedVersion: 2
         x: 144
@@ -1526,7 +1526,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_122
+    - name: spriteMap_122
       rect:
         serializedVersion: 2
         x: 160
@@ -1536,7 +1536,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_123
+    - name: spriteMap_123
       rect:
         serializedVersion: 2
         x: 176
@@ -1546,7 +1546,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_124
+    - name: spriteMap_124
       rect:
         serializedVersion: 2
         x: 192
@@ -1556,7 +1556,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_125
+    - name: spriteMap_125
       rect:
         serializedVersion: 2
         x: 208
@@ -1566,7 +1566,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_126
+    - name: spriteMap_126
       rect:
         serializedVersion: 2
         x: 224
@@ -1576,7 +1576,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_127
+    - name: spriteMap_127
       rect:
         serializedVersion: 2
         x: 240
@@ -1586,7 +1586,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_128
+    - name: spriteMap_128
       rect:
         serializedVersion: 2
         x: 0
@@ -1596,7 +1596,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_129
+    - name: spriteMap_129
       rect:
         serializedVersion: 2
         x: 16
@@ -1606,7 +1606,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_130
+    - name: spriteMap_130
       rect:
         serializedVersion: 2
         x: 32
@@ -1616,7 +1616,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_131
+    - name: spriteMap_131
       rect:
         serializedVersion: 2
         x: 48
@@ -1626,7 +1626,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_132
+    - name: spriteMap_132
       rect:
         serializedVersion: 2
         x: 64
@@ -1636,7 +1636,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_133
+    - name: spriteMap_133
       rect:
         serializedVersion: 2
         x: 80
@@ -1646,7 +1646,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_134
+    - name: spriteMap_134
       rect:
         serializedVersion: 2
         x: 96
@@ -1656,7 +1656,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_135
+    - name: spriteMap_135
       rect:
         serializedVersion: 2
         x: 112
@@ -1666,7 +1666,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_136
+    - name: spriteMap_136
       rect:
         serializedVersion: 2
         x: 128
@@ -1676,7 +1676,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_137
+    - name: spriteMap_137
       rect:
         serializedVersion: 2
         x: 144
@@ -1686,7 +1686,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_138
+    - name: spriteMap_138
       rect:
         serializedVersion: 2
         x: 160
@@ -1696,7 +1696,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_139
+    - name: spriteMap_139
       rect:
         serializedVersion: 2
         x: 176
@@ -1706,7 +1706,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_140
+    - name: spriteMap_140
       rect:
         serializedVersion: 2
         x: 192
@@ -1716,7 +1716,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_141
+    - name: spriteMap_141
       rect:
         serializedVersion: 2
         x: 208
@@ -1726,7 +1726,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_142
+    - name: spriteMap_142
       rect:
         serializedVersion: 2
         x: 224
@@ -1736,7 +1736,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_143
+    - name: spriteMap_143
       rect:
         serializedVersion: 2
         x: 240
@@ -1746,7 +1746,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_144
+    - name: spriteMap_144
       rect:
         serializedVersion: 2
         x: 0
@@ -1756,7 +1756,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_145
+    - name: spriteMap_145
       rect:
         serializedVersion: 2
         x: 16
@@ -1766,7 +1766,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_146
+    - name: spriteMap_146
       rect:
         serializedVersion: 2
         x: 32
@@ -1776,7 +1776,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_147
+    - name: spriteMap_147
       rect:
         serializedVersion: 2
         x: 48
@@ -1786,7 +1786,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_148
+    - name: spriteMap_148
       rect:
         serializedVersion: 2
         x: 64
@@ -1796,7 +1796,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_149
+    - name: spriteMap_149
       rect:
         serializedVersion: 2
         x: 80
@@ -1806,7 +1806,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_150
+    - name: spriteMap_150
       rect:
         serializedVersion: 2
         x: 96
@@ -1816,7 +1816,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_151
+    - name: spriteMap_151
       rect:
         serializedVersion: 2
         x: 112
@@ -1826,7 +1826,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_152
+    - name: spriteMap_152
       rect:
         serializedVersion: 2
         x: 128
@@ -1836,7 +1836,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_153
+    - name: spriteMap_153
       rect:
         serializedVersion: 2
         x: 144
@@ -1846,7 +1846,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_154
+    - name: spriteMap_154
       rect:
         serializedVersion: 2
         x: 160
@@ -1856,7 +1856,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_155
+    - name: spriteMap_155
       rect:
         serializedVersion: 2
         x: 176
@@ -1866,7 +1866,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_156
+    - name: spriteMap_156
       rect:
         serializedVersion: 2
         x: 192
@@ -1876,7 +1876,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_157
+    - name: spriteMap_157
       rect:
         serializedVersion: 2
         x: 208
@@ -1886,7 +1886,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_158
+    - name: spriteMap_158
       rect:
         serializedVersion: 2
         x: 224
@@ -1896,7 +1896,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_159
+    - name: spriteMap_159
       rect:
         serializedVersion: 2
         x: 240
@@ -1906,7 +1906,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_160
+    - name: spriteMap_160
       rect:
         serializedVersion: 2
         x: 0
@@ -1916,7 +1916,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_161
+    - name: spriteMap_161
       rect:
         serializedVersion: 2
         x: 16
@@ -1926,7 +1926,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_162
+    - name: spriteMap_162
       rect:
         serializedVersion: 2
         x: 32
@@ -1936,7 +1936,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_163
+    - name: spriteMap_163
       rect:
         serializedVersion: 2
         x: 48
@@ -1946,7 +1946,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_164
+    - name: spriteMap_164
       rect:
         serializedVersion: 2
         x: 64
@@ -1956,7 +1956,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_165
+    - name: spriteMap_165
       rect:
         serializedVersion: 2
         x: 80
@@ -1966,7 +1966,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_166
+    - name: spriteMap_166
       rect:
         serializedVersion: 2
         x: 96
@@ -1976,7 +1976,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_167
+    - name: spriteMap_167
       rect:
         serializedVersion: 2
         x: 112
@@ -1986,7 +1986,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_168
+    - name: spriteMap_168
       rect:
         serializedVersion: 2
         x: 128
@@ -1996,7 +1996,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_169
+    - name: spriteMap_169
       rect:
         serializedVersion: 2
         x: 144
@@ -2006,7 +2006,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_170
+    - name: spriteMap_170
       rect:
         serializedVersion: 2
         x: 160
@@ -2016,7 +2016,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_171
+    - name: spriteMap_171
       rect:
         serializedVersion: 2
         x: 176
@@ -2026,7 +2026,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_172
+    - name: spriteMap_172
       rect:
         serializedVersion: 2
         x: 192
@@ -2036,7 +2036,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_173
+    - name: spriteMap_173
       rect:
         serializedVersion: 2
         x: 208
@@ -2046,7 +2046,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_174
+    - name: spriteMap_174
       rect:
         serializedVersion: 2
         x: 224
@@ -2056,7 +2056,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_175
+    - name: spriteMap_175
       rect:
         serializedVersion: 2
         x: 240
@@ -2066,7 +2066,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_176
+    - name: spriteMap_176
       rect:
         serializedVersion: 2
         x: 0
@@ -2076,7 +2076,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_177
+    - name: spriteMap_177
       rect:
         serializedVersion: 2
         x: 16
@@ -2086,7 +2086,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_178
+    - name: spriteMap_178
       rect:
         serializedVersion: 2
         x: 32
@@ -2096,7 +2096,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_179
+    - name: spriteMap_179
       rect:
         serializedVersion: 2
         x: 48
@@ -2106,7 +2106,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_180
+    - name: spriteMap_180
       rect:
         serializedVersion: 2
         x: 64
@@ -2116,7 +2116,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_181
+    - name: spriteMap_181
       rect:
         serializedVersion: 2
         x: 80
@@ -2126,7 +2126,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_182
+    - name: spriteMap_182
       rect:
         serializedVersion: 2
         x: 96
@@ -2136,7 +2136,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_183
+    - name: spriteMap_183
       rect:
         serializedVersion: 2
         x: 112
@@ -2146,7 +2146,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_184
+    - name: spriteMap_184
       rect:
         serializedVersion: 2
         x: 128
@@ -2156,7 +2156,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_185
+    - name: spriteMap_185
       rect:
         serializedVersion: 2
         x: 144
@@ -2166,7 +2166,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_186
+    - name: spriteMap_186
       rect:
         serializedVersion: 2
         x: 160
@@ -2176,7 +2176,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_187
+    - name: spriteMap_187
       rect:
         serializedVersion: 2
         x: 176
@@ -2186,7 +2186,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_188
+    - name: spriteMap_188
       rect:
         serializedVersion: 2
         x: 192
@@ -2196,7 +2196,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_189
+    - name: spriteMap_189
       rect:
         serializedVersion: 2
         x: 208
@@ -2206,7 +2206,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_190
+    - name: spriteMap_190
       rect:
         serializedVersion: 2
         x: 224
@@ -2216,7 +2216,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_191
+    - name: spriteMap_191
       rect:
         serializedVersion: 2
         x: 240
@@ -2226,7 +2226,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_192
+    - name: spriteMap_192
       rect:
         serializedVersion: 2
         x: 0
@@ -2236,7 +2236,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_193
+    - name: spriteMap_193
       rect:
         serializedVersion: 2
         x: 16
@@ -2246,7 +2246,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_194
+    - name: spriteMap_194
       rect:
         serializedVersion: 2
         x: 32
@@ -2256,7 +2256,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_195
+    - name: spriteMap_195
       rect:
         serializedVersion: 2
         x: 48
@@ -2266,7 +2266,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_196
+    - name: spriteMap_196
       rect:
         serializedVersion: 2
         x: 64
@@ -2276,7 +2276,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_197
+    - name: spriteMap_197
       rect:
         serializedVersion: 2
         x: 80
@@ -2286,7 +2286,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_198
+    - name: spriteMap_198
       rect:
         serializedVersion: 2
         x: 96
@@ -2296,7 +2296,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_199
+    - name: spriteMap_199
       rect:
         serializedVersion: 2
         x: 112
@@ -2306,7 +2306,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_200
+    - name: spriteMap_200
       rect:
         serializedVersion: 2
         x: 128
@@ -2316,7 +2316,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_201
+    - name: spriteMap_201
       rect:
         serializedVersion: 2
         x: 144
@@ -2326,7 +2326,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_202
+    - name: spriteMap_202
       rect:
         serializedVersion: 2
         x: 160
@@ -2336,7 +2336,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_203
+    - name: spriteMap_203
       rect:
         serializedVersion: 2
         x: 176
@@ -2346,7 +2346,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_204
+    - name: spriteMap_204
       rect:
         serializedVersion: 2
         x: 192
@@ -2356,7 +2356,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_205
+    - name: spriteMap_205
       rect:
         serializedVersion: 2
         x: 208
@@ -2366,7 +2366,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_206
+    - name: spriteMap_206
       rect:
         serializedVersion: 2
         x: 224
@@ -2376,7 +2376,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_207
+    - name: spriteMap_207
       rect:
         serializedVersion: 2
         x: 240
@@ -2386,7 +2386,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_208
+    - name: spriteMap_208
       rect:
         serializedVersion: 2
         x: 0
@@ -2396,7 +2396,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_209
+    - name: spriteMap_209
       rect:
         serializedVersion: 2
         x: 16
@@ -2406,7 +2406,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_210
+    - name: spriteMap_210
       rect:
         serializedVersion: 2
         x: 32
@@ -2416,7 +2416,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_211
+    - name: spriteMap_211
       rect:
         serializedVersion: 2
         x: 48
@@ -2426,7 +2426,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_212
+    - name: spriteMap_212
       rect:
         serializedVersion: 2
         x: 64
@@ -2436,7 +2436,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_213
+    - name: spriteMap_213
       rect:
         serializedVersion: 2
         x: 80
@@ -2446,7 +2446,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_214
+    - name: spriteMap_214
       rect:
         serializedVersion: 2
         x: 96
@@ -2456,7 +2456,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_215
+    - name: spriteMap_215
       rect:
         serializedVersion: 2
         x: 112
@@ -2466,7 +2466,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_216
+    - name: spriteMap_216
       rect:
         serializedVersion: 2
         x: 128
@@ -2476,7 +2476,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_217
+    - name: spriteMap_217
       rect:
         serializedVersion: 2
         x: 144
@@ -2486,7 +2486,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_218
+    - name: spriteMap_218
       rect:
         serializedVersion: 2
         x: 160
@@ -2496,7 +2496,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_219
+    - name: spriteMap_219
       rect:
         serializedVersion: 2
         x: 176
@@ -2506,7 +2506,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_220
+    - name: spriteMap_220
       rect:
         serializedVersion: 2
         x: 192
@@ -2516,7 +2516,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_221
+    - name: spriteMap_221
       rect:
         serializedVersion: 2
         x: 208
@@ -2526,7 +2526,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_222
+    - name: spriteMap_222
       rect:
         serializedVersion: 2
         x: 224
@@ -2536,7 +2536,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_223
+    - name: spriteMap_223
       rect:
         serializedVersion: 2
         x: 240
@@ -2546,7 +2546,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_224
+    - name: spriteMap_224
       rect:
         serializedVersion: 2
         x: 0
@@ -2556,7 +2556,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_225
+    - name: spriteMap_225
       rect:
         serializedVersion: 2
         x: 16
@@ -2566,7 +2566,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_226
+    - name: spriteMap_226
       rect:
         serializedVersion: 2
         x: 32
@@ -2576,7 +2576,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_227
+    - name: spriteMap_227
       rect:
         serializedVersion: 2
         x: 48
@@ -2586,7 +2586,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_228
+    - name: spriteMap_228
       rect:
         serializedVersion: 2
         x: 64
@@ -2596,7 +2596,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_229
+    - name: spriteMap_229
       rect:
         serializedVersion: 2
         x: 80
@@ -2606,7 +2606,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_230
+    - name: spriteMap_230
       rect:
         serializedVersion: 2
         x: 96
@@ -2616,7 +2616,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_231
+    - name: spriteMap_231
       rect:
         serializedVersion: 2
         x: 112
@@ -2626,7 +2626,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_232
+    - name: spriteMap_232
       rect:
         serializedVersion: 2
         x: 128
@@ -2636,7 +2636,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_233
+    - name: spriteMap_233
       rect:
         serializedVersion: 2
         x: 144
@@ -2646,7 +2646,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_234
+    - name: spriteMap_234
       rect:
         serializedVersion: 2
         x: 160
@@ -2656,7 +2656,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_235
+    - name: spriteMap_235
       rect:
         serializedVersion: 2
         x: 176
@@ -2666,7 +2666,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_236
+    - name: spriteMap_236
       rect:
         serializedVersion: 2
         x: 192
@@ -2676,7 +2676,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_237
+    - name: spriteMap_237
       rect:
         serializedVersion: 2
         x: 208
@@ -2686,7 +2686,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_238
+    - name: spriteMap_238
       rect:
         serializedVersion: 2
         x: 224
@@ -2696,7 +2696,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_239
+    - name: spriteMap_239
       rect:
         serializedVersion: 2
         x: 240
@@ -2706,7 +2706,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_240
+    - name: spriteMap_240
       rect:
         serializedVersion: 2
         x: 0
@@ -2716,7 +2716,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_241
+    - name: spriteMap_241
       rect:
         serializedVersion: 2
         x: 16
@@ -2726,7 +2726,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_242
+    - name: spriteMap_242
       rect:
         serializedVersion: 2
         x: 32
@@ -2736,7 +2736,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_243
+    - name: spriteMap_243
       rect:
         serializedVersion: 2
         x: 48
@@ -2746,7 +2746,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_244
+    - name: spriteMap_244
       rect:
         serializedVersion: 2
         x: 64
@@ -2756,7 +2756,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_245
+    - name: spriteMap_245
       rect:
         serializedVersion: 2
         x: 80
@@ -2766,7 +2766,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_246
+    - name: spriteMap_246
       rect:
         serializedVersion: 2
         x: 96
@@ -2776,7 +2776,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_247
+    - name: spriteMap_247
       rect:
         serializedVersion: 2
         x: 112
@@ -2786,7 +2786,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_248
+    - name: spriteMap_248
       rect:
         serializedVersion: 2
         x: 128
@@ -2796,7 +2796,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_249
+    - name: spriteMap_249
       rect:
         serializedVersion: 2
         x: 144
@@ -2806,7 +2806,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_250
+    - name: spriteMap_250
       rect:
         serializedVersion: 2
         x: 160
@@ -2816,7 +2816,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_251
+    - name: spriteMap_251
       rect:
         serializedVersion: 2
         x: 176
@@ -2826,7 +2826,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_252
+    - name: spriteMap_252
       rect:
         serializedVersion: 2
         x: 192
@@ -2836,7 +2836,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_253
+    - name: spriteMap_253
       rect:
         serializedVersion: 2
         x: 208
@@ -2846,7 +2846,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_254
+    - name: spriteMap_254
       rect:
         serializedVersion: 2
         x: 224
@@ -2856,7 +2856,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: spriteMap_zelda_255
+    - name: spriteMap_255
       rect:
         serializedVersion: 2
         x: 240

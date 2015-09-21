@@ -1065,6 +1065,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: swordUp
+      value: 
+      objectReference: {fileID: 21300052, guid: 45afd34443b96473598b76e2b1778b4e,
+        type: 3}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: swordDown
+      value: 
+      objectReference: {fileID: 21300048, guid: 45afd34443b96473598b76e2b1778b4e,
+        type: 3}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: swordRight
+      value: 
+      objectReference: {fileID: 21300054, guid: 45afd34443b96473598b76e2b1778b4e,
+        type: 3}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: swordLeft
+      value: 
+      objectReference: {fileID: 21300050, guid: 45afd34443b96473598b76e2b1778b4e,
+        type: 3}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: swordCooldown
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0

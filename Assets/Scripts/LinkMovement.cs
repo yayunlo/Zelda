@@ -210,6 +210,7 @@ public class LinkMovement : MonoBehaviour {
 	void OnCollisionEnter (Collision coll) {
 
 		if (coll.gameObject.tag == "Rupee") {
+            LinkStatus.rupee_count++;
 			Destroy (coll.gameObject);
 		} 
 		else if (coll.gameObject.tag == "Door") {

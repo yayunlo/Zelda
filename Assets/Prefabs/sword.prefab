@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11407588}
   - 65: {fileID: 6582180}
   m_Layer: 0
-  m_Name: sword
+  m_Name: Sword
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

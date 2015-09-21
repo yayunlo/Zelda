@@ -8,14 +8,11 @@ TagManager:
   - Door
   - LockedDoor
   - Probe
-<<<<<<< HEAD
   - HUD
   - Inventory
   - Bomb
-=======
   - Weapon
   - Wall
->>>>>>> yayunloBranch
   layers:
   - Default
   - TransparentFX

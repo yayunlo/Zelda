@@ -254,15 +254,14 @@ public class LinkMovement : MonoBehaviour {
 			else if (currentDir == 'e') probePos += new Vector3(1f, 0, 0);
 			else if (currentDir == 'w') probePos += new Vector3(-1f, 0, 0);
 
-<<<<<<< HEAD
+
 			probeInstance = Instantiate(probePrefab, probePos, Quaternion.identity) as GameObject;
 
             LinkStatus.key_count--;
-=======
+
 			if( probeInstance != null) Destroy(probeInstance);
 
 			probeInstance = Instantiate(probePrefab, probePos, Quaternion.identity) as GameObject;
->>>>>>> yayunloBranch
 
 		}
 	}

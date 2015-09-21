@@ -17,6 +17,7 @@ public class CameraFollow : MonoBehaviour {
         cam = GetComponent<Camera>();
 
 		// Initially position the camera exactly over the poi - JB
+
 		transform.position = poi.position + offset;
 	}
 	

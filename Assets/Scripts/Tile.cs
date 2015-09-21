@@ -43,6 +43,7 @@ public class Tile : MonoBehaviour {
         sprend.sprite = spriteArray[tileNum];
 
 		if (ShowMapOnCamera.S != null) SetCollider();
+		if (ShowMapOnCamera.S != null) SetTab ();
         //TODO: Add something for destructibility - JB
 
         gameObject.SetActive(true);
@@ -109,7 +110,43 @@ public class Tile : MonoBehaviour {
 
 	}
 
+	void SetTab () {
+
+		SpriteRenderer sprite = GetComponent<SpriteRenderer> ();
+		char c = ShowMapOnCamera.S.tabS[tileNum];
+
+		switch (c) {
+		case 'D': // Door
+			tag = "Door";
+			sprite.sortingOrder = 2;
+			print (transform.position);
+			print (tileNum);
+			break;
+
+		case 'L': // Locked Door
+			tag = "LockedDoor";
+			gameObject.AddComponent<Rigidbody>().useGravity = false;
+			break;
+
+		default: 
+			break;
+		}
+
+		switch (tileNum) {
+		case 29:
+			sprite.sortingOrder = 0;
+			break;
+		case 44:
+			tag = "Untagged";
+			break;
+		default:
+			break;
+		}
+	}
+
 }
+
+
 
 
 /*

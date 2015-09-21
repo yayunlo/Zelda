@@ -120,19 +120,26 @@ public class ParseMetroidMap : MonoBehaviour {
 	
 	public ulong CheckSum(Color32[] chunk) {
 		ulong res = 0;
+		
+		/*
 		for (int i=0; i<chunk.Length; i++) {
 			switch (i%3) {
 			case 0:
 				res += (ulong) ( (int) chunk[i].r * 1000000 + (int) chunk[i].g * 1000 + (int) chunk[i].b );
 				break;
 			case 1:
-				res += (ulong) ( (int) chunk[i].g * 1000000 + (int) chunk[i].b * 1000 + (int) chunk[i].r );
+				res += (ulong) ( (int) chunk[i].g * 1000000 + (int) chunk[i].b * 1000 + (int) chunk[i].r + i );
 				break;
 			case 2:
-				res += (ulong) ( (int) chunk[i].b * 1000000 + (int) chunk[i].r * 1000 + (int) chunk[i].g );
+				res += (ulong) ( (int) chunk[i].b * 1000000 + (int) chunk[i].r * 1000 + (int) chunk[i].g + i );
 				break;
 			}
 		}
+		*/
+		
+		for(int i = 0; i < chunk.Length; i++)
+			res += (ulong) (chunk[i].r * (i+1) + chunk[i].g * (i+2) + chunk[i].b * (i+3));
+		
 		return res;
 	}
 	

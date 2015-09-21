@@ -191,7 +191,7 @@ public class LinkMovement : MonoBehaviour {
 
 	void UseTools () {
 
-		if (Input.GetKeyDown (KeyCode.K)) {
+		if (Input.GetKeyDown (KeyCode.K) && LinkStatus.key_count > 0) {
 
 			Vector3 probePos = transform.position;
 
@@ -202,7 +202,7 @@ public class LinkMovement : MonoBehaviour {
 
 			probeInstance = Instantiate(probePrefab, probePos, Quaternion.identity) as GameObject;
 
-
+            LinkStatus.key_count--;
 
 		}
 	}
@@ -212,7 +212,17 @@ public class LinkMovement : MonoBehaviour {
 		if (coll.gameObject.tag == "Rupee") {
             LinkStatus.rupee_count++;
 			Destroy (coll.gameObject);
-		} 
+		}
+        else if (coll.gameObject.tag == "Bomb")
+        {
+            LinkStatus.bomb_count++;
+            Destroy(coll.gameObject);
+        }
+        else if (coll.gameObject.tag == "Key")
+        {
+            LinkStatus.key_count++;
+            Destroy(coll.gameObject);
+        }
 		else if (coll.gameObject.tag == "Door") {
 
 			Vector3 newPos = transform.position;

@@ -9,6 +9,8 @@ TagManager:
   - LockedDoor
   - Probe
   - HUD
+  - Inventory
+  - Bomb
   layers:
   - Default
   - TransparentFX

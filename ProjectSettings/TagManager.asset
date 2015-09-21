@@ -8,7 +8,7 @@ TagManager:
   - Door
   - LockedDoor
   - Probe
-  - Weapen
+  - Weapon
   - Wall
   layers:
   - Default

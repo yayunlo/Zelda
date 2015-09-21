@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum weapen
+public enum weapon
 {
 	bow, boomerang, bumb, sword, flySword, whiteSword, flyWhiteSword
 };
@@ -12,9 +12,9 @@ public class LinkMovement : MonoBehaviour {
 
 	public float velocityFactor = 1.0f;
 
-	public static weapen weapenMode = weapen.sword;
-	public GameObject weapenInstance;
-	bool useWeapen = false;
+	public static weapon weaponMode = weapon.sword;
+	public GameObject weaponInstance;
+	bool useWeapon = false;
 
 
 	public GameObject swordPrefab;
@@ -56,7 +56,7 @@ public class LinkMovement : MonoBehaviour {
 			horizontal_input = (positionError.y != 0) ? 0.0f : horizontal_input;
 			vertical_input = (positionError.x != 0) ? 0.0f : vertical_input;
 
-			if(useWeapen) {
+			if(useWeapon) {
 				horizontal_input = 0f;
 				vertical_input = 0f;
 			}
@@ -175,55 +175,55 @@ public class LinkMovement : MonoBehaviour {
 	void Combat (){
 
 		if (Input.GetKeyDown (KeyCode.F))
-			weapenMode = weapen.flySword;
+			weaponMode = weapon.flySword;
 
-		if (weapenMode == weapen.sword || weapenMode == weapen.flySword) {
+		if (weaponMode == weapon.sword || weaponMode == weapon.flySword) {
 		
 			// Progress the sword cooldown.
 			if (swordCooldown > 0)
 				swordCooldown--;
-			else if ( weapenInstance != null) {
-				if(weapenMode == weapen.sword) {
-					Destroy (weapenInstance);
-					useWeapen = false;
+			else if ( weaponInstance != null) {
+				if(weaponMode == weapon.sword) {
+					Destroy (weaponInstance);
+					useWeapon = false;
 				}
-				else if (weapenMode == weapen.flySword) {
-					weapenInstance.GetComponent<Sword>().towardDir = currentDir;
-					weapenInstance.GetComponent<Sword>().fly = true;
-					weapenInstance = null;
-					useWeapen = false;
+				else if (weaponMode == weapon.flySword) {
+					weaponInstance.GetComponent<Sword>().towardDir = currentDir;
+					weaponInstance.GetComponent<Sword>().fly = true;
+					weaponInstance = null;
+					useWeapon = false;
 				}
 
 			}
 
-			if (Input.GetKeyDown (KeyCode.Space) && weapenInstance == null) {
+			if (Input.GetKeyDown (KeyCode.Space) && weaponInstance == null) {
 				
 				// Spawn the sword into being
-				weapenInstance = Instantiate(swordPrefab, transform.position, Quaternion.identity) as GameObject;
+				weaponInstance = Instantiate(swordPrefab, transform.position, Quaternion.identity) as GameObject;
 				swordCooldown = 15;
-				useWeapen = true;
+				useWeapon = true;
 				
 				// Adjust sword angle and position based on current facing direction
 				if(currentDir == 'n') {
-					weapenInstance.transform.position += new Vector3(0, 1, 0);
+					weaponInstance.transform.position += new Vector3(0, 1, 0);
 
 				}
 				else if(currentDir == 'e') {
-					weapenInstance.transform.position += new Vector3(1, 0, 0);
-					weapenInstance.transform.Rotate(new Vector3(0, 0, 1), 270);
+					weaponInstance.transform.position += new Vector3(1, 0, 0);
+					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 270);
 				}
 				else if(currentDir == 's') {
-					weapenInstance.transform.position += new Vector3(0, -1, 0);
-					weapenInstance.transform.Rotate(new Vector3(0, 0, 1), 180);
+					weaponInstance.transform.position += new Vector3(0, -1, 0);
+					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 180);
 				}
 				else if(currentDir == 'w') {
-					weapenInstance.transform.position += new Vector3(-1, 0, 0);
-					weapenInstance.transform.Rotate(new Vector3(0, 0, 1), 90);
+					weaponInstance.transform.position += new Vector3(-1, 0, 0);
+					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 90);
 				}
 				
 			}
 
-			if (useWeapen) {
+			if (useWeapon) {
 				if (currentDir == 'n') {
 					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[26];
 				}

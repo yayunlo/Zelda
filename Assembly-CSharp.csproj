@@ -52,6 +52,8 @@
      <Compile Include="Assets\Scripts\ProbeDetection.cs" />
      <Compile Include="Assets\Scripts\ShowMap.cs" />
      <Compile Include="Assets\Scripts\ShowMapOnCamera.cs" />
+     <Compile Include="Assets\Scripts\Sword.cs" />
+     <Compile Include="Assets\Scripts\SwordLight.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />
      <None Include="Assets\Resources\tab.txt" />
      <None Include="Assets\Resources\spriteText.txt" />

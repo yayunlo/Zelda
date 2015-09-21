@@ -119,13 +119,14 @@ public class Tile : MonoBehaviour {
 		case 'D': // Door
 			tag = "Door";
 			sprite.sortingOrder = 2;
-			print (transform.position);
-			print (tileNum);
 			break;
 
 		case 'L': // Locked Door
 			tag = "LockedDoor";
-			gameObject.AddComponent<Rigidbody>().useGravity = false;
+			break;
+
+		case 'W':
+			tag = "Wall";
 			break;
 
 		default: 

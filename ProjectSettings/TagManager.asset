@@ -8,6 +8,8 @@ TagManager:
   - Door
   - LockedDoor
   - Probe
+  - Weapen
+  - Wall
   layers:
   - Default
   - TransparentFX

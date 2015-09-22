@@ -992,6 +992,10 @@ Prefab:
       propertyPath: swordCooldown
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: arrowPrefab
+      value: 
+      objectReference: {fileID: 100886, guid: e0ebb1a3a4f2246bb92168b04859dad1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0

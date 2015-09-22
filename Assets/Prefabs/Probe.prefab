@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &166158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 403808}
+  - 65: {fileID: 6565454}
+  - 114: {fileID: 11485618}
+  - 54: {fileID: 5459168}
+  m_Layer: 0
+  m_Name: Probe
+  m_TagString: Probe
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403808
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.5, y: 28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!54 &5459168
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166158}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6565454
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0199999996, y: .0199999996, z: .200000003}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11485618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db72e938a6e4507bac59b84ebec6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorTopL: {fileID: 21300184, guid: 264241745d6794937aa27e4721841742, type: 3}
+  doorTopR: {fileID: 21300186, guid: 264241745d6794937aa27e4721841742, type: 3}
+  doorDownL: {fileID: 21300052, guid: 264241745d6794937aa27e4721841742, type: 3}
+  doorDownR: {fileID: 21300054, guid: 264241745d6794937aa27e4721841742, type: 3}
+  doorLeft: {fileID: 21300102, guid: 264241745d6794937aa27e4721841742, type: 3}
+  doorRight: {fileID: 21300096, guid: 264241745d6794937aa27e4721841742, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: probe
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: doorTopL
+      value: 
+      objectReference: {fileID: 21300184, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: doorTopR
+      value: 
+      objectReference: {fileID: 21300186, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: doorDownL
+      value: 
+      objectReference: {fileID: 21300052, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: doorDownR
+      value: 
+      objectReference: {fileID: 21300054, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: doorLeft
+      value: 
+      objectReference: {fileID: 21300102, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: doorRight
+      value: 
+      objectReference: {fileID: 21300096, guid: 264241745d6794937aa27e4721841742,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 166158}
+  m_IsPrefabParent: 1

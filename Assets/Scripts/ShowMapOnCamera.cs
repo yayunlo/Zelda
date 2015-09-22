@@ -22,11 +22,12 @@ public class ShowMapOnCamera : MonoBehaviour {
     public TextAsset        mapData;
     public TextAsset        collisionData;
     public TextAsset        destructibleData;
+	public TextAsset		tabData;
     public GameObject       tilePrefab;
     public Vector2[]        stopPoints;
     public bool             ________________;
     public int              w, h;
-    public string           collisionS, destructibleS;
+    public string           collisionS, destructibleS, tabS;
     public int              screenW, screenH, screenW2, screenH2;
     public Transform        mapAnchor;
     public int              spriteSheetW;
@@ -47,6 +48,7 @@ public class ShowMapOnCamera : MonoBehaviour {
 		// Remove the line endings from the text of the colision and destructible data
         collisionS = RemoveLineEndings( collisionData.text );
         destructibleS = RemoveLineEndings( destructibleData.text );
+		tabS = RemoveLineEndings ( tabData.text );
 
 		// Read in the map data
 		string[] lines = mapData.text.Split('\n');

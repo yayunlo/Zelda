@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rupee
+  - Door
+  - LockedDoor
+  - Probe
+  - HUD
+  - Inventory
+  - Bomb
+  - Weapon
+  - Wall
   layers:
   - Default
   - TransparentFX

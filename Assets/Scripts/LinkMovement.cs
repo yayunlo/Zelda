@@ -342,6 +342,9 @@ public class LinkMovement : MonoBehaviour {
         }
 		else if (coll.gameObject.tag == "Door") {
 
+			if( transform.position.y <= 1f )
+				return;
+
 			Vector3 newPos = transform.position;
 			doorCount += 1;
 

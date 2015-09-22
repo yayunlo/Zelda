@@ -5,6 +5,7 @@ public class Arrow : MonoBehaviour {
 
 	public char towardDir = '0';
 	public float speed = 5f;
+	public GameObject explorePrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -34,9 +35,24 @@ public class Arrow : MonoBehaviour {
 		if (coll.gameObject.tag == "Wall" 
 		    || coll.gameObject.tag == "Door" 
 		    || coll.gameObject.tag == "LockedDoor") {
+
+			Vector3 explodePos = transform.position;
 			
+			if(towardDir == 'n') {
+				explodePos.y += 0.5f;
+			}
+			else if (towardDir == 's') {
+				explodePos.y -= 0.5f;
+			}
+			else if (towardDir == 'e') {
+				explodePos.x += 0.5f;
+			}
+			else if (towardDir == 'w') {
+				explodePos.x -= 0.5f;
+			}
+
+			Instantiate(explorePrefab, explodePos, Quaternion.identity );
 			Destroy (gameObject);
-			
 		}
 	}
 }

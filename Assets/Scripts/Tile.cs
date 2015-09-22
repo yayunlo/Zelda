@@ -130,19 +130,21 @@ public class Tile : MonoBehaviour {
 			break;
 
 		default: 
+			tag = "Untagged";
+			sprite.sortingOrder = 0;
 			break;
 		}
 
-		switch (tileNum) {
-		case 29:
-			sprite.sortingOrder = 0;
-			break;
-		case 44:
-			tag = "Untagged";
-			break;
-		default:
-			break;
-		}
+//		switch (tileNum) {
+//		case 29:
+//			sprite.sortingOrder = 0;
+//			break;
+//		case 44:
+//			tag = "Untagged";
+//			break;
+//		default:
+//			break;
+//		}
 	}
 
 }

@@ -146,8 +146,8 @@ Camera:
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 68.3000031
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -221,6 +221,48 @@ MonoBehaviour:
   screenH2: 0
   mapAnchor: {fileID: 0}
   spriteSheetW: 0
+--- !u!1001 &341536094
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421798, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1123290331 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 172920, guid: 1e0b573ea6e6241c286bc1daf9845880, type: 2}
@@ -474,6 +516,10 @@ Prefab:
       propertyPath: swordCooldown
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: arrowPrefab
+      value: 
+      objectReference: {fileID: 127844, guid: 6422a3d76ff0d402fbae7b794d410a1a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0

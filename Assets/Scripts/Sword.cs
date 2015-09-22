@@ -23,10 +23,10 @@ public class Sword : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (fly == true) {
-			if (!setRigidBody) {
-				gameObject.AddComponent<Rigidbody>().useGravity = false;
-				setRigidBody = true;
-			}
+//			if (!setRigidBody) {
+//				gameObject.AddComponent<Rigidbody>().useGravity = false;
+//				setRigidBody = true;
+//			}
 			Vector3 newPos = transform.position;
 
 			if(towardDir == 'n') {

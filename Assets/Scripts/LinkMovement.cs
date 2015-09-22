@@ -18,8 +18,11 @@ public class LinkMovement : MonoBehaviour {
 
 
 	public GameObject swordPrefab;
-	public int swordCooldown = 30;
+	public int swordCooldown = 0;
 	public Sprite swordUp, swordDown, swordRight, swordLeft;
+
+	public GameObject arrowPrefab;
+	public int arrowCooldown = 0;
 
 	public static char currentDir = 'n';
 
@@ -85,7 +88,7 @@ public class LinkMovement : MonoBehaviour {
 
 			// If we're not moving, don't animate.
 			//if (newVelocity.magnitude == 0)
-			if (positionError.x == 0.0f && positionError.y == 0.0f)
+			if (!useWeapon && positionError.x == 0.0f && positionError.y == 0.0f)
 				GetComponent<Animator> ().speed = 0.00000001f;
 			else
 				GetComponent<Animator> ().speed = 1.0f;
@@ -174,8 +177,10 @@ public class LinkMovement : MonoBehaviour {
 
 	void Combat (){
 
-		if (Input.GetKeyDown (KeyCode.F))
+		if (!useWeapon && Input.GetKeyDown (KeyCode.F)) {
+//			if(weaponMode )
 			weaponMode = weapon.flySword;
+		}
 
 		if (weaponMode == weapon.sword || weaponMode == weapon.flySword) {
 		
@@ -185,12 +190,18 @@ public class LinkMovement : MonoBehaviour {
 			else if ( weaponInstance != null) {
 				if(weaponMode == weapon.sword) {
 					Destroy (weaponInstance);
+
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon",0);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon",0);
 					useWeapon = false;
 				}
 				else if (weaponMode == weapon.flySword) {
 					weaponInstance.GetComponent<Sword>().towardDir = currentDir;
 					weaponInstance.GetComponent<Sword>().fly = true;
 					weaponInstance = null;
+
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon",0);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon",0);
 					useWeapon = false;
 				}
 
@@ -202,7 +213,7 @@ public class LinkMovement : MonoBehaviour {
 				weaponInstance = Instantiate(swordPrefab, transform.position, Quaternion.identity) as GameObject;
 				swordCooldown = 15;
 				useWeapon = true;
-				
+
 				// Adjust sword angle and position based on current facing direction
 				if(currentDir == 'n') {
 					weaponInstance.transform.position += new Vector3(0, 1, 0);
@@ -211,32 +222,78 @@ public class LinkMovement : MonoBehaviour {
 				else if(currentDir == 'e') {
 					weaponInstance.transform.position += new Vector3(1, 0, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 270);
+
 				}
 				else if(currentDir == 's') {
 					weaponInstance.transform.position += new Vector3(0, -1, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 180);
+
 				}
 				else if(currentDir == 'w') {
 					weaponInstance.transform.position += new Vector3(-1, 0, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 90);
+
 				}
 				
 			}
+			else if ( weaponMode == weapon.bow ) {
 
-			if (useWeapon) {
+				// Spawn the sword into being
+				weaponInstance = Instantiate(swordPrefab, transform.position, Quaternion.identity) as GameObject;
+				arrowCooldown = 3;
+				useWeapon = true;
+
+				if(arrowCooldown > 0)
+					arrowCooldown--;
+				else if (weaponInstance != null) {
+
+				}
+
+				if(Input.GetKeyDown(KeyCode.Space) && weaponInstance == null) {
+
+					// Adjust arrow angle and position based on current facing direction
+					if(currentDir == 'n') {
+						weaponInstance.transform.position += new Vector3(0, 1, 0);
+						
+					}
+					else if(currentDir == 'e') {
+						weaponInstance.transform.position += new Vector3(1, 0, 0);
+						weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 270);
+						
+					}
+					else if(currentDir == 's') {
+						weaponInstance.transform.position += new Vector3(0, -1, 0);
+						weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 180);
+						
+					}
+					else if(currentDir == 'w') {
+						weaponInstance.transform.position += new Vector3(-1, 0, 0);
+						weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 90);
+						
+					}
+				}
+
+			}
+
+			if(useWeapon) {
 				if (currentDir == 'n') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[26];
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 1);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 0);
 				}
 				else if (currentDir == 's') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[24];
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon", -1);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 0);
 				}
 				else if (currentDir == 'e') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[27];
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 0);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 1);
 				}
 				else if (currentDir == 'w') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[25];
+					gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 0);
+					gameObject.GetComponent<Animator>().SetInteger("hor_weapon", -1);
 				}
 			}
+
 			
 		}
 

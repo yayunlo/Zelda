@@ -194,25 +194,24 @@ public class LinkMovement : MonoBehaviour {
 			// Progress the sword cooldown.
 			if (swordCooldown > 0)
 				swordCooldown--;
-			else if (weaponInstance != null) {
-				if (weaponMode == weapon.sword) {
-					Destroy (weaponInstance);
-
-					gameObject.GetComponent<Animator> ().SetInteger ("ver_weapon", 0);
-					gameObject.GetComponent<Animator> ().SetInteger ("hor_weapon", 0);
-					useWeapon = false;
-				} else if (weaponMode == weapon.flySword) {
-					weaponInstance.GetComponent<Sword> ().towardDir = currentDir;
-					weaponInstance.GetComponent<Sword> ().fly = true;
-					weaponInstance = null;
-
-					gameObject.GetComponent<Animator> ().SetInteger ("ver_weapon", 0);
-					gameObject.GetComponent<Animator> ().SetInteger ("hor_weapon", 0);
-					useWeapon = false;
+			else { 
+				if(weaponInstance != null){
+					if (weaponMode == weapon.sword) {
+						Destroy (weaponInstance);
+					} 
+					else if (weaponMode == weapon.flySword) {
+						weaponInstance.GetComponent<Sword> ().towardDir = currentDir;
+						weaponInstance.GetComponent<Sword> ().fly = true;
+						weaponInstance = null;
+					}
 				}
 
-			}
+				weaponInstance = null;
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_weapon", 0);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_weapon", 0);
+				useWeapon = false;
 
+			}
 			if (Input.GetKeyDown (KeyCode.Space) && weaponInstance == null) {
 				
 				// Spawn the sword into being

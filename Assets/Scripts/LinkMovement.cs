@@ -18,8 +18,11 @@ public class LinkMovement : MonoBehaviour {
 
 
 	public GameObject swordPrefab;
-	public int swordCooldown = 30;
+	public int swordCooldown = 0;
 	public Sprite swordUp, swordDown, swordRight, swordLeft;
+
+	public GameObject arrowPrefab;
+	public int arrowCooldown = 0;
 
 	public static char currentDir = 'n';
 
@@ -85,7 +88,7 @@ public class LinkMovement : MonoBehaviour {
 
 			// If we're not moving, don't animate.
 			//if (newVelocity.magnitude == 0)
-			if (positionError.x == 0.0f && positionError.y == 0.0f)
+			if (!useWeapon && positionError.x == 0.0f && positionError.y == 0.0f)
 				GetComponent<Animator> ().speed = 0.00000001f;
 			else
 				GetComponent<Animator> ().speed = 1.0f;
@@ -174,68 +177,122 @@ public class LinkMovement : MonoBehaviour {
 
 	void Combat (){
 
-		if (Input.GetKeyDown (KeyCode.F))
+		if (!useWeapon && Input.GetKeyDown (KeyCode.F))
 			weaponMode = weapon.flySword;
+
+		if (!useWeapon && Input.GetKeyDown (KeyCode.C)) {
+			if(weaponMode == weapon.sword || weaponMode == weapon.flySword)
+				weaponMode = weapon.bow;
+			else if (weaponMode == weapon.bow)
+				weaponMode = weapon.sword;
+
+			print (weaponMode);
+		}
 
 		if (weaponMode == weapon.sword || weaponMode == weapon.flySword) {
 		
 			// Progress the sword cooldown.
 			if (swordCooldown > 0)
 				swordCooldown--;
-			else if ( weaponInstance != null) {
-				if(weaponMode == weapon.sword) {
-					Destroy (weaponInstance);
-					useWeapon = false;
+			else { 
+				if(weaponInstance != null){
+					if (weaponMode == weapon.sword) {
+						Destroy (weaponInstance);
+					} 
+					else if (weaponMode == weapon.flySword) {
+						weaponInstance.GetComponent<Sword> ().towardDir = currentDir;
+						weaponInstance.GetComponent<Sword> ().fly = true;
+						weaponInstance = null;
+					}
 				}
-				else if (weaponMode == weapon.flySword) {
-					weaponInstance.GetComponent<Sword>().towardDir = currentDir;
-					weaponInstance.GetComponent<Sword>().fly = true;
-					weaponInstance = null;
-					useWeapon = false;
-				}
+
+				weaponInstance = null;
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_weapon", 0);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_weapon", 0);
+				useWeapon = false;
 
 			}
-
 			if (Input.GetKeyDown (KeyCode.Space) && weaponInstance == null) {
 				
 				// Spawn the sword into being
-				weaponInstance = Instantiate(swordPrefab, transform.position, Quaternion.identity) as GameObject;
+				weaponInstance = Instantiate (swordPrefab, transform.position, Quaternion.identity) as GameObject;
 				swordCooldown = 15;
 				useWeapon = true;
 				
 				// Adjust sword angle and position based on current facing direction
+				if (currentDir == 'n') {
+					weaponInstance.transform.position += new Vector3 (0, 1, 0);
+
+				} else if (currentDir == 'e') {
+					weaponInstance.transform.position += new Vector3 (1, 0, 0);
+					weaponInstance.transform.Rotate (new Vector3 (0, 0, 1), 270);
+				} else if (currentDir == 's') {
+					weaponInstance.transform.position += new Vector3 (0, -1, 0);
+					weaponInstance.transform.Rotate (new Vector3 (0, 0, 1), 180);
+				} else if (currentDir == 'w') {
+					weaponInstance.transform.position += new Vector3 (-1, 0, 0);
+					weaponInstance.transform.Rotate (new Vector3 (0, 0, 1), 90);
+				}
+				
+			}
+		}
+		else if ( weaponMode == weapon.bow ) {
+
+			if(arrowCooldown == 0)
+				useWeapon = false;
+			else if(arrowCooldown > 0)
+				arrowCooldown--;
+
+			if(Input.GetKeyDown(KeyCode.Space) && !useWeapon) {
+
+				// Spawn the sword into being
+				GameObject weaponInstance = Instantiate(arrowPrefab, transform.position, Quaternion.identity) as GameObject;
+				arrowCooldown = 3;
+				useWeapon = true;
+
+
+				// Adjust arrow angle and position based on current facing direction
 				if(currentDir == 'n') {
 					weaponInstance.transform.position += new Vector3(0, 1, 0);
-
+					weaponInstance.GetComponent<Arrow>().towardDir = 'n';
 				}
 				else if(currentDir == 'e') {
 					weaponInstance.transform.position += new Vector3(1, 0, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 270);
+					weaponInstance.GetComponent<Arrow>().towardDir = 'e';
 				}
 				else if(currentDir == 's') {
 					weaponInstance.transform.position += new Vector3(0, -1, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 180);
+					weaponInstance.GetComponent<Arrow>().towardDir = 's';
 				}
 				else if(currentDir == 'w') {
 					weaponInstance.transform.position += new Vector3(-1, 0, 0);
 					weaponInstance.transform.Rotate(new Vector3(0, 0, 1), 90);
+					weaponInstance.GetComponent<Arrow>().towardDir = 'w';
 				}
-				
-			}
 
-			if (useWeapon) {
-				if (currentDir == 'n') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[26];
-				}
-				else if (currentDir == 's') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[24];
-				}
-				else if (currentDir == 'e') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[27];
-				}
-				else if (currentDir == 'w') {
-					gameObject.GetComponent<SpriteRenderer>().sprite = linkSprite[25];
-				}
+				weaponInstance = null;
+			}
+		}
+
+
+		if (useWeapon) {
+			if (currentDir == 'n') {
+				gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 1);
+				gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 0);
+			}
+			else if (currentDir == 's') {
+				gameObject.GetComponent<Animator>().SetInteger("ver_weapon", -1);
+				gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 0);
+			}
+			else if (currentDir == 'e') {
+				gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 0);
+				gameObject.GetComponent<Animator>().SetInteger("hor_weapon", 1);
+			}
+			else if (currentDir == 'w') {
+				gameObject.GetComponent<Animator>().SetInteger("ver_weapon", 0);
+				gameObject.GetComponent<Animator>().SetInteger("hor_weapon", -1);
 			}
 			
 		}
@@ -283,6 +340,9 @@ public class LinkMovement : MonoBehaviour {
             Destroy(coll.gameObject);
         }
 		else if (coll.gameObject.tag == "Door") {
+
+			if( transform.position.y <= 1f )
+				return;
 
 			Vector3 newPos = transform.position;
 			doorCount += 1;

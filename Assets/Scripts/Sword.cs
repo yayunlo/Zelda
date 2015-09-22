@@ -7,13 +7,11 @@ public class Sword : MonoBehaviour {
 
 	public bool fly = false;
 	public char towardDir = 'n';
-	public float speed = 3f;
+	public float speed = 5f;
 	public Sprite normalSprite, shineSprite;
 	public int shineRate = 2;
 	public float lightRange = 1f;
 	int shineCount = 0;
-
-	bool setRigidBody = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,10 +21,7 @@ public class Sword : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (fly == true) {
-			if (!setRigidBody) {
-				gameObject.AddComponent<Rigidbody>().useGravity = false;
-				setRigidBody = true;
-			}
+
 			Vector3 newPos = transform.position;
 
 			if(towardDir == 'n') {

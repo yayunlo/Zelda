@@ -340,6 +340,10 @@ public class LinkMovement : MonoBehaviour {
             LinkStatus.key_count++;
             Destroy(coll.gameObject);
         }
+		else if (coll.gameObject.tag == "Monster")
+		{
+			LinkStatus.health--;
+		}
 		else if (coll.gameObject.tag == "Door") {
 
 			if( transform.position.y <= 1f )

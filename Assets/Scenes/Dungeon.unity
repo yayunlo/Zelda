@@ -367,6 +367,48 @@ MonoBehaviour:
   screenH2: 0
   mapAnchor: {fileID: 0}
   spriteSheetW: 0
+--- !u!1001 &346948585
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 435784, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &598355716
 Prefab:
   m_ObjectHideFlags: 0
@@ -654,6 +696,30 @@ Prefab:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 110054, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar0
+      objectReference: {fileID: 0}
+    - target: {fileID: 150042, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar1
+      objectReference: {fileID: 0}
+    - target: {fileID: 133210, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 181818, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar3
+      objectReference: {fileID: 0}
+    - target: {fileID: 149542, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar4
+      objectReference: {fileID: 0}
+    - target: {fileID: 105022, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+      propertyPath: m_Name
+      value: HealthBar5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
   m_IsPrefabParent: 0
@@ -780,6 +846,21 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22494368, guid: 76e5fccbf7e914c648d763cffefd1b94,
     type: 2}
   m_PrefabInternal: {fileID: 1054055165}
+--- !u!1 &1223416047 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 191944, guid: af9563ec68d33d844adfa743f022b68f, type: 2}
+  m_PrefabInternal: {fileID: 878252138}
+--- !u!114 &1223416048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223416047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab9a837b431b40ec91d724f897cd498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1647385431 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22490624, guid: af9563ec68d33d844adfa743f022b68f,
@@ -1000,6 +1081,10 @@ Prefab:
       propertyPath: swordPrefab
       value: 
       objectReference: {fileID: 144872, guid: 94c179480db1545c8bf49752978f517b, type: 2}
+    - target: {fileID: 5456102, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: m_Constraints
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0

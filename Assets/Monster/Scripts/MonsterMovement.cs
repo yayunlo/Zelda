@@ -30,8 +30,6 @@ public class MonsterMovement : MonoBehaviour {
 
     private float lockPosY;
     
-    private const float lockPosVar = 0.0f;
-    
 	// Use this for initialization
 	void Start ()
     {
@@ -70,24 +68,22 @@ public class MonsterMovement : MonoBehaviour {
         GetComponent<Rigidbody>().velocity = velocity * velocityFactor;
 
         // Transformation Error Correction
-        Vector3 tmpPos = transform.position;
         switch (currentDir)
         {
             case 'n':
             case 's':
-                transform.position = new Vector3(lockPosX, transform.position.y, lockPosVar);
+                transform.position = new Vector3(lockPosX, transform.position.y, 0);
                 break;
             case 'e':
             case 'w':
-                transform.position = new Vector3(transform.position.x, lockPosY, lockPosVar);
+                transform.position = new Vector3(transform.position.x, lockPosY, 0);
                 break;
             default:
                 Debug.Log("Invalid move, check movement script on" + name);
                 break;
         }
-        transform.position = tmpPos;
         // Lock rotation
-        transform.rotation = Quaternion.Euler(lockPosVar, lockPosVar, lockPosVar);
+        // transform.rotation = Quaternion.Euler(lockPosVar, lockPosVar, lockPosVar);
         
 
         timeBuffer += Time.deltaTime;
@@ -97,7 +93,7 @@ public class MonsterMovement : MonoBehaviour {
             // Correct the position of monster to the nearest int
             transform.position = new Vector3(Mathf.Round(transform.position.x),
                                              Mathf.Round(transform.position.y),
-                                             lockPosVar);
+                                             0);
             // Update lock position info
             lockPosX = transform.position.x;
             lockPosY = transform.position.y;
@@ -107,4 +103,9 @@ public class MonsterMovement : MonoBehaviour {
         }
 
     }
+
+	void OnCollisionEnter(Collision coll)
+	{
+
+	}
 }

@@ -96,13 +96,14 @@ public class LinkMovement : MonoBehaviour {
 			Combat ();
 			UseTools ();
 
-			// Correct postition to correct track
+			// Correct position to correct track
 			if (positionError.x != 0.0f && horizontal_input == 0.0f) {
 			
 				Vector3 newPos = transform.position;
 
 				float idealX = Mathf.Ceil (transform.position.x / 0.5f);
-				if (positionError.x < 0.0f) {
+				if (positionError.x < 0.0f)
+                {
 					idealX = idealX - 1.0f;
 				}
 			

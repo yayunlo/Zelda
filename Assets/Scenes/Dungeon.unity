@@ -773,6 +773,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f428f0d0165294a8985f4fc40f91a7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stalfosPrefab: {fileID: 0}
+  keesePrefab: {fileID: 170766, guid: 66f76268bf1e643b3aef23cc89864adc, type: 2}
+  gelPrefab: {fileID: 0}
+  goriyaPrefab: {fileID: 0}
+  wallmasterPrefab: {fileID: 0}
+  aquamentusPrefab: {fileID: 0}
+  bladetrapePrefab: {fileID: 0}
+  enemyGameObject: []
   speed: 5
   Link: {fileID: 0}
 --- !u!224 &1130616111 stripped

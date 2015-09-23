@@ -53,8 +53,11 @@ public class Sword : MonoBehaviour {
 	void OnTriggerEnter ( Collider coll ) {
 		if (coll.gameObject.tag == "Wall" 
 			|| coll.gameObject.tag == "Door" 
-			|| coll.gameObject.tag == "LockedDoor") {
+			|| coll.gameObject.tag == "LockedDoor"
+		    || coll.gameObject.tag == "Enemy") {
 
+			if(!fly)
+				return;
 
 			GameObject swordLight;
 
@@ -82,5 +85,9 @@ public class Sword : MonoBehaviour {
 			Destroy (gameObject);
 
 		}
+	}
+
+	void OnCollisionEnter(Collision coll) {
+		print (coll.gameObject.tag);
 	}
 }

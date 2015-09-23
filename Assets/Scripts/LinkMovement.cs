@@ -11,6 +11,7 @@ public class LinkMovement : MonoBehaviour {
 	static Sprite[] linkSprite;
 
 	public float velocityFactor = 1.0f;
+	int hitCooldown = 0;
 
 	public static weapon weaponMode = weapon.sword;
 	public GameObject weaponInstance;
@@ -59,7 +60,7 @@ public class LinkMovement : MonoBehaviour {
 			horizontal_input = (positionError.y != 0) ? 0.0f : horizontal_input;
 			vertical_input = (positionError.x != 0) ? 0.0f : vertical_input;
 
-			if(useWeapon) {
+			if(useWeapon || hitCooldown > 0) {
 				horizontal_input = 0f;
 				vertical_input = 0f;
 			}
@@ -88,13 +89,14 @@ public class LinkMovement : MonoBehaviour {
 
 			// If we're not moving, don't animate.
 			//if (newVelocity.magnitude == 0)
-			if (!useWeapon && positionError.x == 0.0f && positionError.y == 0.0f)
+			if (!useWeapon && hitCooldown == 0 && positionError.x == 0.0f && positionError.y == 0.0f)
 				GetComponent<Animator> ().speed = 0.00000001f;
 			else
 				GetComponent<Animator> ().speed = 1.0f;
 
 			Combat ();
 			UseTools ();
+			hitReaction();
 
 			// Correct postition to correct track
 			if (positionError.x != 0.0f && horizontal_input == 0.0f) {
@@ -216,7 +218,8 @@ public class LinkMovement : MonoBehaviour {
 				
 				// Spawn the sword into being
 				weaponInstance = Instantiate (swordPrefab, transform.position, Quaternion.identity) as GameObject;
-				swordCooldown = 15;
+
+				swordCooldown = 10;
 				useWeapon = true;
 				
 				// Adjust sword angle and position based on current facing direction
@@ -323,6 +326,31 @@ public class LinkMovement : MonoBehaviour {
 		}
 	}
 
+	void hitReaction () {
+		if (hitCooldown > 0) {
+
+			if (currentDir == 'n') {
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_hit", 1);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_hit", 0);
+			} else if (currentDir == 's') {
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_hit", -1);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_hit", 0);
+			} else if (currentDir == 'e') {
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_hit", 0);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_hit", 1);
+			} else if (currentDir == 'w') {
+				gameObject.GetComponent<Animator> ().SetInteger ("ver_hit", 0);
+				gameObject.GetComponent<Animator> ().SetInteger ("hor_hit", -1);
+			}
+			hitCooldown--;
+		} 
+		else {
+			gameObject.GetComponent<Animator> ().SetInteger ("ver_hit", 0);
+			gameObject.GetComponent<Animator> ().SetInteger ("hor_hit", 0);
+		}
+	
+	} 
+
 	void OnCollisionEnter (Collision coll) {
 
 		if (coll.gameObject.tag == "Rupee") {
@@ -412,5 +440,13 @@ public class LinkMovement : MonoBehaviour {
 			positionError.y = 0.0f;
 
 		}
+	}
+
+	void OnTriggerEnter ( Collider coll ) {
+		if (coll.gameObject.tag == "Enemy") {
+			print("hit by enemy");
+			hitCooldown = 18;
+		}
+
 	}
 }

@@ -802,11 +802,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486730, guid: 1e0b573ea6e6241c286bc1daf9845880, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 39.5
+      value: 39.75
       objectReference: {fileID: 0}
     - target: {fileID: 486730, guid: 1e0b573ea6e6241c286bc1daf9845880, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 486730, guid: 1e0b573ea6e6241c286bc1daf9845880, type: 2}
       propertyPath: m_LocalPosition.z

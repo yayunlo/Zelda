@@ -34,7 +34,8 @@ public class Arrow : MonoBehaviour {
 	void OnTriggerEnter ( Collider coll ) {
 		if (coll.gameObject.tag == "Wall" 
 		    || coll.gameObject.tag == "Door" 
-		    || coll.gameObject.tag == "LockedDoor") {
+		    || coll.gameObject.tag == "LockedDoor"
+		    || coll.gameObject.tag == "Enemy") {
 
 			Vector3 explodePos = transform.position;
 			

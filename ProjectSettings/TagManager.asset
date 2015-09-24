@@ -14,7 +14,7 @@ TagManager:
   - Weapon
   - Wall
   - Key
-  - Enemy
+  - Monster
   layers:
   - Default
   - TransparentFX

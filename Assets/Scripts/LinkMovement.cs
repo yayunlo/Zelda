@@ -98,13 +98,14 @@ public class LinkMovement : MonoBehaviour {
 			UseTools ();
 			hitReaction();
 
-			// Correct postition to correct track
+			// Correct position to correct track
 			if (positionError.x != 0.0f && horizontal_input == 0.0f) {
 			
 				Vector3 newPos = transform.position;
 
 				float idealX = Mathf.Ceil (transform.position.x / 0.5f);
-				if (positionError.x < 0.0f) {
+				if (positionError.x < 0.0f)
+                {
 					idealX = idealX - 1.0f;
 				}
 			
@@ -367,6 +368,10 @@ public class LinkMovement : MonoBehaviour {
             LinkStatus.key_count++;
             Destroy(coll.gameObject);
         }
+		else if (coll.gameObject.tag == "Monster")
+		{
+			LinkStatus.health--;
+		}
 		else if (coll.gameObject.tag == "Door") {
 
 			if( transform.position.y <= 1f )

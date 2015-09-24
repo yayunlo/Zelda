@@ -10,7 +10,7 @@ public class LinkStatus : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        health = 0;
+        health = 6;
         rupee_count = 0;
         key_count = 0;
         bomb_count = 0;

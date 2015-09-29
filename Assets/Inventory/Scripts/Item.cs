@@ -10,8 +10,6 @@ public class Item : MonoBehaviour
     /// </summary>
     public ItemType type;
 
-    public bool isPackable;
-
     /// <summary>
     /// The item's neutral sprite
     /// </summary>
@@ -40,14 +38,7 @@ public class Item : MonoBehaviour
             case ItemType.HEALTH:
                 Debug.Log("I just used a health potion");
                 break;
-            case ItemType.RUPEE:
-                Debug.Log("I can't use rupee");
-                break;
-            case ItemType.KEY:
-                Debug.Log("I just used a key");
-                break;
-            case ItemType.BOMB:
-                Debug.Log("I just used a bomb");
+            default:
                 break;
         }
 

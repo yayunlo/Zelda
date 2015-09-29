@@ -1,3 +1,22 @@
 Sept. 22, 2015 By Haizhou
 
+Todo:
 Add load movement script functionality
+
+Sept. 23, 2015 By Haizhou
+
+Things to note on piazza:
+1. Control Requirement:
+	- Arrow key for movement
+	- A for button 'A'
+	- S for button 'B'
+	- Return for start
+	- RightShift for Select
+
+2. Control Instrtuction on Web Build
+
+3. Dungeon Minimap
+
+4. Main & Secondry Weapon
+
+5. Invincible Mode

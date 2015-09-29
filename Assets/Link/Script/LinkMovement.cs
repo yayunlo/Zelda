@@ -3,7 +3,7 @@ using System.Collections;
 
 public enum weapon
 {
-	bow, boomerang, bumb, sword, flySword, whiteSword, flyWhiteSword
+	BOW, BOOMERANG, BOMB, SWORD, FLYWORD, WHITESWORD, FLWHITESWORD
 };
 
 public class LinkMovement : MonoBehaviour {
@@ -13,7 +13,7 @@ public class LinkMovement : MonoBehaviour {
 	public float velocityFactor = 1.0f;
 	int hitCooldown = 0;
 
-	public static weapon weaponMode = weapon.sword;
+	public static weapon weaponMode = weapon.SWORD;
 	public GameObject weaponInstance;
 	bool useWeapon = false;
 
@@ -43,7 +43,7 @@ public class LinkMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		linkSprite = Resources.LoadAll<Sprite>("link_sprites");
+		// linkSprite = Resources.LoadAll<Sprite>("link_sprites");
 	}
 	
 	// Update is called once per frame
@@ -145,7 +145,7 @@ public class LinkMovement : MonoBehaviour {
 				transform.position = Vector3.MoveTowards(transform.position, throughDoorPos, velocityFactor * Time.deltaTime);
 			}
 
-			// check which posision is link in
+			// check which position is link in
 			if ( currentDir == 'n' && (Mathf.Floor(transform.position.y / 11f)*11f + 1f) == transform.position.y ) {
 				doorBc1.enabled = true;
 				doorBc2.enabled = true;
@@ -181,28 +181,28 @@ public class LinkMovement : MonoBehaviour {
 	void Combat (){
 
 		if (!useWeapon && Input.GetKeyDown (KeyCode.F))
-			weaponMode = weapon.flySword;
+			weaponMode = weapon.FLYWORD;
 
 		if (!useWeapon && Input.GetKeyDown (KeyCode.C)) {
-			if(weaponMode == weapon.sword || weaponMode == weapon.flySword)
-				weaponMode = weapon.bow;
-			else if (weaponMode == weapon.bow)
-				weaponMode = weapon.sword;
+			if(weaponMode == weapon.SWORD || weaponMode == weapon.FLYWORD)
+				weaponMode = weapon.BOW;
+			else if (weaponMode == weapon.BOW)
+				weaponMode = weapon.SWORD;
 
 			print (weaponMode);
 		}
 
-		if (weaponMode == weapon.sword || weaponMode == weapon.flySword) {
+		if (weaponMode == weapon.SWORD || weaponMode == weapon.FLYWORD) {
 		
 			// Progress the sword cooldown.
 			if (swordCooldown > 0)
 				swordCooldown--;
 			else { 
 				if(weaponInstance != null){
-					if (weaponMode == weapon.sword) {
+					if (weaponMode == weapon.SWORD) {
 						Destroy (weaponInstance);
 					} 
-					else if (weaponMode == weapon.flySword) {
+					else if (weaponMode == weapon.FLYWORD) {
 						weaponInstance.GetComponent<Sword> ().towardDir = currentDir;
 						weaponInstance.GetComponent<Sword> ().fly = true;
 						weaponInstance = null;
@@ -240,7 +240,7 @@ public class LinkMovement : MonoBehaviour {
 				
 			}
 		}
-		else if ( weaponMode == weapon.bow ) {
+		else if ( weaponMode == weapon.BOW ) {
 
 			if(arrowCooldown == 0)
 				useWeapon = false;
@@ -368,7 +368,7 @@ public class LinkMovement : MonoBehaviour {
             LinkStatus.key_count++;
             Destroy(coll.gameObject);
         }
-		else if (coll.gameObject.tag == "Monster")
+		else if (coll.gameObject.tag == "Enemy")
 		{
 			LinkStatus.health--;
 		}

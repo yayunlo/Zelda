@@ -54,7 +54,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  isPackable: 0
   spriteNeutral: {fileID: 0}
   spriteHighlighted: {fileID: 0}
   maxSize: 0

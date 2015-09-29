@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   posSet: []
+  nextPos: {x: 0, y: 0, z: 0}
   dir: 0
 --- !u!212 &21249386
 SpriteRenderer:

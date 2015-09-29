@@ -88,9 +88,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocityFactor: 3.5
+  weaponInstance: {fileID: 0}
   swordPrefab: {fileID: 104700, guid: 94c179480db1545c8bf49752978f517b, type: 2}
-  swordInstance: {fileID: 0}
   swordCooldown: 0
+  swordUp: {fileID: 0}
+  swordDown: {fileID: 0}
+  swordRight: {fileID: 0}
+  swordLeft: {fileID: 0}
+  arrowPrefab: {fileID: 0}
+  arrowCooldown: 0
   positionCorrectParam: .0500000007
   probePrefab: {fileID: 166158, guid: e400091c739b3403d9b08d5196ba16fd, type: 2}
   probeInstance: {fileID: 0}

@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿/*
+using UnityEngine;
 using System.Collections;
 
 public class ShowMap : MonoBehaviour {
-	public int				ss = 16;
+	//public int				ss = 16;
 	public TextAsset		mapData;
 	public GameObject		tilePrefab;
 	public Vector2[]		stopPoints;
@@ -45,3 +46,4 @@ public class ShowMap : MonoBehaviour {
 	}
 	
 }
+*/

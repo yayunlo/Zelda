@@ -29,17 +29,20 @@ public class Map : MonoBehaviour
 
 	// public Vector2 texture_scale;
 
-	void Start()
+	void Awake()
 	{
 		ParseFiles();
 
 		// Generate the mapAnchor to which all of the Tiles will be parented
 		mapAnchor = (new GameObject("MapAnchor")).transform;
-		
+
 		//Init other data structure for map
 		tile_pool = new List<Tile>();
 		map = new Tile[mapTileWidth, mapTileHeight]; // Should fill with nulls - JB
+	}
 
+	void Start()
+	{
 		RedrawScreen(true);
 	}
 
@@ -70,22 +73,22 @@ public class Map : MonoBehaviour
 		int cam_x = Mathf.RoundToInt(Camera.main.transform.position.x);
 		int cam_y = Mathf.RoundToInt(Camera.main.transform.position.y);
 
-		int left = cam_x - (int)screenTileSize.x / 2 - tileOverage;
-		int right = cam_x + (int)screenTileSize.x / 2 + tileOverage;
-		int buttom = cam_y - (int)screenTileSize.y / 2 - tileOverage;
-		int top = cam_y + (int)screenTileSize.y / 2 + tileOverage;
-
-		Tile t;
-		for (int i = left - tileOverage; i < right + tileOverage; i++)
+		int left = cam_x - (int)screenTileSize.x / 2;
+		int right = cam_x + (int)screenTileSize.x / 2;
+		int buttom = cam_y - (int)screenTileSize.y / 2;
+		int top = cam_y + (int)screenTileSize.y / 2;
+		
+		for (int i = Mathf.Max(left - tileOverage, 0); i < right + tileOverage; i++)
 		{
 			for (int j = buttom - tileOverage; j < top + tileOverage; j++)
 			{
+				int current_indice = tile_indice[i, j];
 				// Don't go out of bounds
 				if (i < 0 || j < 0 || i >= mapTileWidth || j >= mapTileHeight)
 				{
 				}
 				// Off-screen Tile || On-screen Null Tiles
-				else if (i < left || i > right || j < buttom || j > top || tile_indice[i, j] == 0)
+				else if (i < left || i > right || j < buttom || j > top || current_indice == 0)
 				{
 					if (map[i, j] != null)
 					{
@@ -94,7 +97,7 @@ public class Map : MonoBehaviour
 				}
 				else if (map[i, j] == null)
 				{
-					PickUpAndRecreateTile(i, j, tile_indice[i, j], collisionScript[i, j]);
+					PickUpAndRecreateTile(i, j, current_indice, collisionScript[current_indice], tagScript[current_indice]);
 				}
 			}
 		}
@@ -127,7 +130,7 @@ public class Map : MonoBehaviour
 	}
 
 
-	public Tile PickUpAndRecreateTile(int x, int y, int tileIndice, char coll_type, char tag)
+	public void PickUpAndRecreateTile(int x, int y, int tileIndice, char coll_type, char tag)
 	{
 		Tile t;
 		// If the pool is empty, create a new Tile
@@ -146,9 +149,7 @@ public class Map : MonoBehaviour
 
 		t.InitTile(x, y, tileIndice, coll_type, tag);
 
-		gameObject.SetActive(true);
-
-		return t;
+		t.gameObject.SetActive(true);
 	}
 
 	public void HideAndDiscardTile(Tile t)

@@ -368,7 +368,7 @@ public class LinkMovement : MonoBehaviour {
             LinkStatus.key_count++;
             Destroy(coll.gameObject);
         }
-		else if (coll.gameObject.tag == "Monster")
+		else if (coll.gameObject.tag == "Enemy")
 		{
 			LinkStatus.health--;
 		}

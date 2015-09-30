@@ -346,7 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ss: 16
   screenSize: {x: 16, y: 15}
-  screenSizeOverage: 2
+  screenSizeOverage: 3
   tileClearOverage: 4
   mapSprites: {fileID: 2800000, guid: 264241745d6794937aa27e4721841742, type: 3}
   mapData: {fileID: 4900000, guid: 9278d984bc2944a068fffb7f8f28c275, type: 3}

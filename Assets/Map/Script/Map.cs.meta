@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: 86467a23b946a4ef5a73f13c598e5001
-timeCreated: 1441650965
+timeCreated: 1443587951
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mapTileIndiceData: {fileID: 4900000, guid: 9278d984bc2944a068fffb7f8f28c275, type: 3}
+  - collisionData: {fileID: 4900000, guid: 3a5b0c0583d7e4ca2a6e18be51cc9615, type: 3}
+  - destructibleData: {fileID: 4900000, guid: 7389a3d58ffa549f5a6d61c4ae0f9861, type: 3}
+  - tagData: {fileID: 4900000, guid: d6a946033dd2148408094e7e7c4ddb0a, type: 3}
+  - tilePrefab: {fileID: 184960, guid: 15833c75680f54e658e96c3d2791956c, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

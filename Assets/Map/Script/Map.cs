@@ -11,8 +11,8 @@ public class Map : MonoBehaviour
 	static private List<Tile> tile_pool; /* Memory Management */
 
 	// Screen Size Info
-	static public Vector2 screenTileSize;
-	static public int tileOverage;
+	static private Vector2 screenTileSize;
+	static private int tileOverage;
 
 	// Map game-play data and file pointers
 	public TextAsset mapTileIndiceData;
@@ -58,12 +58,13 @@ public class Map : MonoBehaviour
 				}
 			}
 		}
-	}
+		RedrawScreen();
+    }
 
 
 	void FixedUpdate()
 	{
-		RedrawScreen();
+		//RedrawScreen();
 	}
 
 
@@ -82,12 +83,8 @@ public class Map : MonoBehaviour
 			for (int j = Mathf.Max(buttom - tileOverage, 0); j < Mathf.Min(top + tileOverage, mapTileWidth); j++)
 			{
 				int current_indice = tile_indice[i, j];
-				// Don't go out of bounds
-				if (i < 0 || j < 0 || i >= mapTileWidth || j >= mapTileHeight)
-				{
-				}
 				// Off-screen Tile || On-screen Null Tiles
-				else if (i < left || i > right || j < buttom || j > top || current_indice == 0)
+				if (i < left || i > right || j < buttom || j > top || current_indice == 0)
 				{
 					if (map[i, j] != null)
 					{

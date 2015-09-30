@@ -37,7 +37,7 @@ public class ShowMap : MonoBehaviour {
 
 				go = Instantiate<GameObject>(tilePrefab);
 				Tile t = go.GetComponent<Tile>();
-				t.SetTile(i,j,tileNum);
+				t.InitTile(i,j,tileNum);
 			}
 
 			yield return null; // Yield the coroutine to allow the screen to update. - JB

@@ -3,14 +3,11 @@ using System.Collections;
 
 public class Tile : MonoBehaviour {
     static Sprite[]         spriteArray;
-
     public Texture2D        spriteTexture;
-	public int				x, y;
-	public int				tileNum;
-	private BoxCollider		bc;
-    private Material        mat;
-
-    private SpriteRenderer  sprend;
+	public int				tileIndice;
+	public BoxCollider		bc;
+    public Material			mat;
+    public SpriteRenderer	sprend;
 
 	void Awake() {
         if (spriteArray == null) {
@@ -24,48 +21,24 @@ public class Tile : MonoBehaviour {
         //mat = rend.material;
 	}
 
-	public void SetTile(int eX, int eY, int eTileNum = -1) {
-		if (x == eX && y == eY) return; // Don't move this if you don't have to. - JB
 
-		x = eX;
-		y = eY;
-		transform.localPosition = new Vector3(x, y, 0);
-        gameObject.name = x.ToString("D3")+"x"+y.ToString("D3");
+	public void InitTile(int _x, int _y, int _tileIndice, char coll_type, char tag_type)
+	{
+		transform.localPosition = new Vector3(_x, _y, 0);
+		gameObject.name = _x.ToString("D3") + "x" + _y.ToString("D3");
+		sprend.sprite = spriteArray[_tileIndice];
+		SetCollider(coll_type);
+		SetTag(tag_type);
+		//TODO: Add something for destructibility - JB
 
-		tileNum = eTileNum;
-		if (tileNum == -1 && ShowMapOnCamera.S != null) {
-			tileNum = ShowMapOnCamera.MAP[x,y];
-			if (tileNum == 0) {
-				ShowMapOnCamera.PushTile(this);
-			}
-		}
-
-        sprend.sprite = spriteArray[tileNum];
-
-		if (ShowMapOnCamera.S != null) SetCollider();
-		if (ShowMapOnCamera.S != null) SetTab ();
-        //TODO: Add something for destructibility - JB
-
-        gameObject.SetActive(true);
-		if (ShowMapOnCamera.S != null) {
-			if (ShowMapOnCamera.MAP_TILES[x,y] != null) {
-				if (ShowMapOnCamera.MAP_TILES[x,y] != this) {
-					ShowMapOnCamera.PushTile( ShowMapOnCamera.MAP_TILES[x,y] );
-				}
-			} else {
-				ShowMapOnCamera.MAP_TILES[x,y] = this;
-			}
-		}
 	}
 
-
 	// Arrange the collider for this tile
-	void SetCollider() {
+	void SetCollider(char coll_type) {
         
         // Collider info from collisionData
         bc.enabled = true;
-        char c = ShowMapOnCamera.S.collisionS[tileNum];
-        switch (c) {
+        switch (coll_type) {
         case 'S': // Whole
             bc.center = Vector3.zero;
             bc.size = Vector3.one;
@@ -110,12 +83,11 @@ public class Tile : MonoBehaviour {
 
 	}
 
-	void SetTab () {
+	void SetTag (char tag_type) {
 
 		SpriteRenderer sprite = GetComponent<SpriteRenderer> ();
-		char c = ShowMapOnCamera.S.tabS[tileNum];
 
-		switch (c) {
+		switch (tag_type) {
 		case 'D': // Door
 			tag = "Door";
 			sprite.sortingOrder = 2;

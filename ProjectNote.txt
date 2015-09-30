@@ -20,3 +20,7 @@ Things to note on piazza:
 4. Main & Secondry Weapon
 
 5. Invincible Mode
+
+Sept. 28, 2015 By Haizhou
+1. Fix camera movement
+1. Fix Keese movement

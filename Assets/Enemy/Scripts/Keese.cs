@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class keese : MonoBehaviour {
+public class Keese : MonoBehaviour {
 
 	public float speed = 1.5f;
 	public Vector3[] posSet;

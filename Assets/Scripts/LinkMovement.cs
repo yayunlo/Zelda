@@ -25,6 +25,9 @@ public class LinkMovement : MonoBehaviour {
 	public GameObject arrowPrefab;
 	public int arrowCooldown = 0;
 
+	public GameObject bombPrefab;
+	public int bombCooldown = 0;
+
 	public static char currentDir = 'n';
 
 	public float positionCorrectParam = 0.025f;
@@ -325,6 +328,21 @@ public class LinkMovement : MonoBehaviour {
 			probeInstance = Instantiate(probePrefab, probePos, Quaternion.identity) as GameObject;
 
 		}
+
+		if (Input.GetKeyDown (KeyCode.B) && LinkStatus.bomb_count > 0)
+		{
+			Vector3 placeBombPos = transform.position;
+
+			if (currentDir == 'n') placeBombPos += new Vector3(0, 1f, 0);
+			else if (currentDir == 's') placeBombPos += new Vector3(0, -1f, 0);
+			else if (currentDir == 'e') placeBombPos += new Vector3(1f, 0, 0);
+			else if (currentDir == 'w') placeBombPos += new Vector3(-1f, 0, 0);
+
+			GameObject bombInstance = Instantiate(bombPrefab, placeBombPos, Quaternion.identity) as GameObject;
+
+			LinkStatus.bomb_count--;
+
+		}
 	}
 
 	void hitReaction () {
@@ -450,6 +468,7 @@ public class LinkMovement : MonoBehaviour {
 	void OnTriggerEnter ( Collider coll ) {
 		if (coll.gameObject.tag == "Enemy") {
 			print("hit by enemy");
+			LinkStatus.health--;
 			hitCooldown = 18;
 		}
 

@@ -106,6 +106,10 @@ public class MonsterMovement : MonoBehaviour {
 
 	void OnCollisionEnter(Collision coll)
 	{
-
+		if (coll.gameObject.tag == "Bomb")
+		{
+			Destroy(coll.gameObject);
+			Destroy(gameObject);
+		}
 	}
 }

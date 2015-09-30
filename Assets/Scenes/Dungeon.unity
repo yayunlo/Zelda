@@ -243,8 +243,8 @@ GameObject:
   - 92: {fileID: 215100845}
   - 124: {fileID: 215100844}
   - 81: {fileID: 215100843}
-  - 114: {fileID: 215100849}
   - 114: {fileID: 215100848}
+  - 114: {fileID: 215100849}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -344,29 +344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86467a23b946a4ef5a73f13c598e5001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ss: 16
-  screenSize: {x: 16, y: 15}
-  screenSizeOverage: 0
-  tileClearOverage: 0
-  mapSprites: {fileID: 2800000, guid: 264241745d6794937aa27e4721841742, type: 3}
-  mapData: {fileID: 4900000, guid: 9278d984bc2944a068fffb7f8f28c275, type: 3}
+  mapTileIndiceData: {fileID: 4900000, guid: 9278d984bc2944a068fffb7f8f28c275, type: 3}
   collisionData: {fileID: 4900000, guid: 3a5b0c0583d7e4ca2a6e18be51cc9615, type: 3}
   destructibleData: {fileID: 4900000, guid: 7389a3d58ffa549f5a6d61c4ae0f9861, type: 3}
-  tabData: {fileID: 4900000, guid: d6a946033dd2148408094e7e7c4ddb0a, type: 3}
+  tagData: {fileID: 4900000, guid: d6a946033dd2148408094e7e7c4ddb0a, type: 3}
   tilePrefab: {fileID: 184960, guid: 15833c75680f54e658e96c3d2791956c, type: 2}
-  stopPoints: []
-  ________________: 0
-  w: 0
-  h: 0
-  collisionS: 
-  destructibleS: 
-  tabS: 
-  screenW: 0
-  screenH: 0
-  screenW2: 0
-  screenH2: 0
-  mapAnchor: {fileID: 0}
-  spriteSheetW: 0
 --- !u!1001 &346948585
 Prefab:
   m_ObjectHideFlags: 0

@@ -11,27 +11,31 @@ public class Map : MonoBehaviour
 	static private List<Tile> tile_pool; /* Memory Management */
 
 	// Screen Size Info
-	static public Vector2 screenTileSize = new Vector2(16, 15);
-	static public int tileOverage = 2;
+	static public Vector2 screenTileSize;
+	static public int tileOverage;
 
 	// Map game-play data and file pointers
-	static public TextAsset mapTileIndiceData;
-	static public TextAsset collisionData;
-	static public TextAsset destructibleData;
-	static public TextAsset tabData;
+	public TextAsset mapTileIndiceData;
+	public TextAsset collisionData;
+	public TextAsset destructibleData;
+	public TextAsset tagData;
 	static private string collisionScript;
 	static private string destructibleScript;
 	static private string tagScript;
 
 	// On screen rendering info
 	static public Transform mapAnchor;
-	static public GameObject tilePrefab;
+	public GameObject tilePrefab;
 
 	// public Vector2 texture_scale;
 
 	void Awake()
 	{
 		ParseFiles();
+
+		// Init viewport (screen)
+		screenTileSize = new Vector2(16, 15);
+		tileOverage = 2;
 
 		// Generate the mapAnchor to which all of the Tiles will be parented
 		mapAnchor = (new GameObject("MapAnchor")).transform;
@@ -43,7 +47,17 @@ public class Map : MonoBehaviour
 
 	void Start()
 	{
-		RedrawScreen(true);
+		// Clear every Tile that was on screen
+		for (int i = 0; i < mapTileWidth; i++)
+		{
+			for (int j = 0; j < mapTileHeight; j++)
+			{
+				if (map[i, j] != null)
+				{
+					HideAndDiscardTile(map[i, j]); // Move this tile back on to the stack
+				}
+			}
+		}
 	}
 
 
@@ -53,23 +67,8 @@ public class Map : MonoBehaviour
 	}
 
 
-	public void RedrawScreen(bool clearAll = false)
+	public void RedrawScreen()
 	{
-		if (clearAll)
-		{
-			// Clear every Tile that was on screen
-			for (int i = 0; i < mapTileWidth; i++)
-			{
-				for (int j = 0; j < mapTileHeight; j++)
-				{
-					if (map[i, j] != null)
-					{
-						HideAndDiscardTile(map[i, j]); // Move this tile back on to the stack
-					}
-				}
-			}
-		}
-
 		int cam_x = Mathf.RoundToInt(Camera.main.transform.position.x);
 		int cam_y = Mathf.RoundToInt(Camera.main.transform.position.y);
 
@@ -78,9 +77,9 @@ public class Map : MonoBehaviour
 		int buttom = cam_y - (int)screenTileSize.y / 2;
 		int top = cam_y + (int)screenTileSize.y / 2;
 		
-		for (int i = Mathf.Max(left - tileOverage, 0); i < right + tileOverage; i++)
+		for (int i = Mathf.Max(left - tileOverage, 0); i < Mathf.Min(right + tileOverage, mapTileWidth); i++)
 		{
-			for (int j = buttom - tileOverage; j < top + tileOverage; j++)
+			for (int j = Mathf.Max(buttom - tileOverage, 0); j < Mathf.Min(top + tileOverage, mapTileWidth); j++)
 			{
 				int current_indice = tile_indice[i, j];
 				// Don't go out of bounds
@@ -109,7 +108,7 @@ public class Map : MonoBehaviour
 		// Remove the line endings from the text of the collision and destructible data
 		collisionScript = RemoveLineEndings(collisionData.text);
 		destructibleScript = RemoveLineEndings(destructibleData.text);
-		tagScript = RemoveLineEndings(tabData.text);
+		tagScript = RemoveLineEndings(tagData.text);
 
 		// Read in the map data
 		string[] lines = mapTileIndiceData.text.Split('\n');

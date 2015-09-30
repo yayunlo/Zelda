@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.8491516, y: 268.107849, z: 1.40439653}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,9 +54,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteTexture: {fileID: 2800000, guid: 264241745d6794937aa27e4721841742, type: 3}
-  x: 0
-  y: 0
-  tileNum: 0
+  tileIndice: 0
+  bc: {fileID: 6509406}
+  mat: {fileID: 0}
+  sprend: {fileID: 21215606}
 --- !u!212 &21215606
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -98,6 +99,26 @@ Prefab:
       propertyPath: spriteTexture
       value: 
       objectReference: {fileID: 2800000, guid: 264241745d6794937aa27e4721841742, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: bc
+      value: 
+      objectReference: {fileID: 6509406}
+    - target: {fileID: 0}
+      propertyPath: sprend
+      value: 
+      objectReference: {fileID: 21215606}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184960}

@@ -367,6 +367,21 @@ MonoBehaviour:
   screenH2: 0
   mapAnchor: {fileID: 0}
   spriteSheetW: 0
+--- !u!1 &328286319 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152736, guid: 96eb1196db12e2e46ac8e780bf914ce2, type: 2}
+  m_PrefabInternal: {fileID: 598355716}
+--- !u!114 &328286324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328286319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c321c3515ef702849a83526e316d9d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &346948585
 Prefab:
   m_ObjectHideFlags: 0
@@ -1097,6 +1112,10 @@ Prefab:
       propertyPath: m_Constraints
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 11490956, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 152736, guid: 96eb1196db12e2e46ac8e780bf914ce2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0

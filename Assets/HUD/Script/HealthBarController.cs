@@ -11,6 +11,8 @@ public class HealthBarController : MonoBehaviour {
 	private GameObject ChildGameObject4; 
 	private GameObject ChildGameObject5;
 
+	private Link status;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,12 +22,14 @@ public class HealthBarController : MonoBehaviour {
 		ChildGameObject3 = transform.GetChild (3).gameObject;
 		ChildGameObject4 = transform.GetChild (4).gameObject; 
 		ChildGameObject5 = transform.GetChild (5).gameObject;
+
+		status = GameObject.Find("Link").GetComponent<Link>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		switch (LinkStatus.health)
+		switch (status.health)
 		{
 			case 0:
 				setColor(new Color[] {Color.black, Color.black, Color.black, Color.black, Color.black, Color.black});

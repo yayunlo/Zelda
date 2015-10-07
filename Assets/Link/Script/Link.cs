@@ -3,7 +3,7 @@ using System.Collections;
 
 public enum ActionState
 {
-	NONE, MOVING, ADJUSTING, RECASTING
+	NONE, MOVING, MOVING_WITH_ADJUSTING, ADJUSTING, RECASTING
 }
 
 public enum Weapon

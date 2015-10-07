@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum AnimationState
+public enum ActionState
 {
 	NONE, MOVING, ADJUSTING, RECASTING
 }
@@ -10,6 +10,11 @@ public enum Weapon
 {
 	BOW, BOOMERANG, BOMB, SWORD, FLYSWORD, WHITESWORD /*interesting*/, FLYWHITESWORD
 };
+
+public enum Direction
+{
+	NORTH, SOUTH, EAST, WEST, STAY
+}
 
 public class Link : MonoBehaviour
 {
@@ -23,15 +28,14 @@ public class Link : MonoBehaviour
 	private int skillCooldown;
 	private int fixedUpdateCounter;
 	private bool controllerEnabled;
-	public AnimationState animationState;
+	public ActionState actionState;
 	// Weapon state variable
 	private Weapon mainWeaponSelection;
 	private Weapon offWeaponSelection;
 	// Movement info
-	private char currentDirection;
+	public Direction currentDirection;
 	public float velocityFactor; /* Please init this variable in unity editor */
-	private bool isDirectionChange;
-	
+
 	private const int fixedUpdatePerSecond = 50;
 	// Recasting state will last for 10 frame
 	private const int recastFrames = 10;
@@ -47,46 +51,75 @@ public class Link : MonoBehaviour
 		skillCooldown = 0;
 		fixedUpdateCounter = 0;
 		controllerEnabled = true;
-		animationState = AnimationState.NONE;
+		actionState = ActionState.NONE;
 		mainWeaponSelection = Weapon.SWORD;
 		offWeaponSelection = Weapon.BOMB;
-		currentDirection = 'n';
-		isDirectionChange = false;
+		currentDirection = Direction.STAY;
 	}
 
 	void Update()
 	{
-		switch (animationState)
+		// Update Direction
+		Direction oldDirection = currentDirection;
+
+		if (getVelocity().x > 0) currentDirection = Direction.EAST;
+		else if (getVelocity().x < 0) currentDirection = Direction.WEST;
+		else if (getVelocity().y > 0) currentDirection = Direction.NORTH;
+		else if (getVelocity().y < 0) currentDirection = Direction.SOUTH;
+		else if (getVelocity().x == 0 && getVelocity().y == 0)
+			currentDirection = Direction.STAY;
+
+		bool isDirectionChange = oldDirection != currentDirection;
+
+		switch (actionState)
 		{
-			case AnimationState.NONE:
+			case ActionState.NONE:
 				controllerEnabled = true;
+				//GetComponent<Animator>().speed = 0.00000001f;
+				if (GetComponent<Rigidbody>().velocity != Vector3.zero)
+				{
+					actionState = ActionState.MOVING;
+				}
 				break;
-			case AnimationState.MOVING:
+			case ActionState.MOVING:
 				controllerEnabled = true;
+
+				//GetComponent<Animator>().speed = 0.00000001f;
+
 				if (isDirectionChange)
 				{
-					animationState = AnimationState.ADJUSTING;
+					actionState = ActionState.ADJUSTING;
 				}
 				break;
-			case AnimationState.ADJUSTING:
+			case ActionState.ADJUSTING:
 				controllerEnabled = false;
+				//print(GetComponent<Rigidbody>().velocity);
+				//GetComponent<Rigidbody>().velocity = Vector3.zero;
+				//GetComponent<Animator>().speed = 0.00000001f;
 				if (isAdjusted())
 				{
-					animationState = AnimationState.NONE;
+					actionState = ActionState.NONE;
 				}
 				break;
-			case AnimationState.RECASTING:
+			case ActionState.RECASTING:
 				controllerEnabled = false;
+				//GetComponent<Animator>().speed = 0.00000001f;
 				--recastCountDown;
 				if (recastCountDown == 0)
 				{
 					recastCountDown = recastFrames;
-					animationState = AnimationState.NONE;
+					actionState = ActionState.NONE;
 				}
 				break;
 			default:
 				break;
 		}
+
+		// Set Animator Params
+		GetComponent<Animator>().SetFloat("vertical_vel", getVelocity().y);
+		GetComponent<Animator>().SetFloat("horizontal_vel", getVelocity().x);
+
+		//print(GetComponent<Animator>().speed);
 	}
 
 	// Skill Recharging
@@ -107,50 +140,23 @@ public class Link : MonoBehaviour
 	}
 
 	// Interface for controller
-	public void setAnimationState(KeyState _keyState)
+	public void setVelocity(Vector3 _input)
 	{
-		switch (animationState)
+		if (_input.magnitude == 0 && actionState == ActionState.MOVING)
 		{
-			case AnimationState.NONE:
-				if (_keyState == KeyState.MOVEMENT)
-				{
-					animationState = AnimationState.MOVING;
-				}
-				else if (_keyState == KeyState.ATTACK)
-				{
-					animationState = AnimationState.RECASTING;
-				}
-				break;
-			case AnimationState.MOVING:
-				if (_keyState == KeyState.NONE)
-				{
-					animationState = AnimationState.ADJUSTING;
-				}
-				break;
-			case AnimationState.ADJUSTING:
-			case AnimationState.RECASTING:
-			default:
-				break;
+			// we don't want controller to zero the velocity before interpolation completes
+			// but we need to start adjusting pos
+			actionState = ActionState.ADJUSTING;
+			return;
 		}
-	}
 
-	// detect direction change
-	public void move(Vector3 _input)
-	{
 		if (!controllerEnabled)
 		{
 			return;
 		}
 
-		char oldDirection = currentDirection;
+		// Set Velocity
 		GetComponent<Rigidbody>().velocity = velocityFactor * _input;
-
-		if (_input.x > 0)	   currentDirection = 'e';
-		else if (_input.x < 0) currentDirection = 'w';
-		else if (_input.y > 0) currentDirection = 'n';
-		else if (_input.y < 0) currentDirection = 's';
-
-		isDirectionChange = oldDirection != currentDirection;
 	}
 
 	// change state into recasting
@@ -210,7 +216,20 @@ public class Link : MonoBehaviour
 
 	bool isAdjusted()
 	{
-		return true;
+		return transform.position.x % 0.5f == 0.0f && transform.position.y % 0.5f == 0.0f;
 	}
 
+	Vector3 getVelocity()
+	{
+		switch (actionState)
+		{
+			case ActionState.NONE:
+			case ActionState.MOVING:
+			case ActionState.ADJUSTING:
+				return GetComponent<Rigidbody>().velocity;
+			case ActionState.RECASTING:
+			default:
+				return Vector3.zero;
+		}
+	}
 }

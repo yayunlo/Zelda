@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 	private KeyState keyState;
 	private WeaponSwitchMode weaponSwitchMode;
 	private Link playerPawn;
-	private PhysicsManager physicsManager;
+	public Vector3 currentVelocity;
 
 	// Use this for initialization
 	void Start()
@@ -27,26 +27,24 @@ public class PlayerController : MonoBehaviour
 		keyState = KeyState.NONE;
 		weaponSwitchMode = WeaponSwitchMode.NONE;
 		playerPawn = GameObject.Find("Link").GetComponent<Link>();
-		physicsManager = GameObject.Find("CustomPhysics").GetComponent<PhysicsManager>();
+		currentVelocity = Vector3.zero;
 	}
 
+	static int a = 0;
 	// Update is called once per frame
 	void Update()
 	{
-		setKeyState();
 
-		playerPawn.setAnimationState(keyState);
+		setKeyState();
 
 		switch (keyState)
 		{
 			case KeyState.NONE:
-                break;
 			case KeyState.MOVEMENT:
-				playerPawn.move(
-					physicsManager.correctPlayerInput(getMovementInput())
-					);
+				getMovementInput();
+                playerPawn.setVelocity(currentVelocity);
 				break;
-			case KeyState.ATTACK:
+            case KeyState.ATTACK:
 				playerPawn.attack();
 				break;
 			case KeyState.ACCESSUI:
@@ -62,13 +60,26 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	Vector3 getMovementInput()
+
+
+	void getMovementInput()
 	{
-		return new Vector3(
-			Input.GetAxis("Horizontal"),
-			Input.GetAxis("Vertical"),
-			0
-			);
+		if (Input.GetAxis("Horizontal") != 0)
+		{
+			currentVelocity = new Vector3(
+				Input.GetAxis("Horizontal"),
+				0,
+				0
+				);
+		}
+		else
+		{
+			currentVelocity = new Vector3(
+				0,
+				Input.GetAxis("Vertical"),
+				0
+				);
+		}
 	}
 
 	void setKeyState()
@@ -98,7 +109,7 @@ public class PlayerController : MonoBehaviour
 			keyState = KeyState.ERROR;
 		}
 	}
-	
+
 	bool isDoingNothing()
 	{
 		return !Input.anyKey;
@@ -125,7 +136,7 @@ public class PlayerController : MonoBehaviour
 	bool isSwitchingWeapon()
 	{
 		return Input.GetKeyDown(KeyCode.C) ||
-            Input.GetKeyDown(KeyCode.F) ||
+			Input.GetKeyDown(KeyCode.F) ||
 			Input.GetKeyDown(KeyCode.V);
 	}
 

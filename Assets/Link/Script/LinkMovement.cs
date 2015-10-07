@@ -185,11 +185,12 @@ public class LinkMovement : MonoBehaviour
 
 		// If we're not moving, don't animate.
 		//if (newVelocity.magnitude == 0)
+		/*
 		if (!useWeapon && hitCooldown == 0 && positionError.x == 0.0f && positionError.y == 0.0f)
 			GetComponent<Animator>().speed = 0.00000001f;
 		else
 			GetComponent<Animator>().speed = 1.0f;
-
+		*/
 		Combat();
 		UseTools();
 		hitReaction();
@@ -202,14 +203,14 @@ public class LinkMovement : MonoBehaviour
 		float horizontalVelocity = Input.GetAxis("Horizontal");
 		float verticalVelocity = Input.GetAxis("Vertical");
 
-		switch (status.animationState)
+		switch (status.actionState)
 		{
-			case AnimationState.NONE:
-			case AnimationState.MOVING:
+			case ActionState.NONE:
+			case ActionState.MOVING:
 				verticalVelocity = (horizontalVelocity == 0f) ? verticalVelocity : 0f;
 				break;
-			case AnimationState.ADJUSTING:
-			case AnimationState.RECASTING:
+			case ActionState.ADJUSTING:
+			case ActionState.RECASTING:
 				horizontalVelocity = 0f;
 				verticalVelocity = 0f;
 				break;

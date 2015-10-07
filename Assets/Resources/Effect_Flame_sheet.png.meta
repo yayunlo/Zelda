@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: d78bf8c84607153428ae7184f15f48ae
+timeCreated: 1444196291
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Effect_Flame_sheet_0
+    21300002: Effect_Flame_sheet_1
+    21300004: Effect_Flame_sheet_2
+    21300006: Effect_Flame_sheet_3
+    21300008: Effect_Flame_sheet_4
+    21300010: Effect_Flame_sheet_5
+    21300012: Effect_Flame_sheet_6
+    21300014: Effect_Flame_sheet_7
+    21300016: Effect_Flame_sheet_8
+    21300018: Effect_Flame_sheet_9
+    21300020: Effect_Flame_sheet_10
+    21300022: Effect_Flame_sheet_11
+    21300024: Effect_Flame_sheet_12
+    21300026: Effect_Flame_sheet_13
+    21300028: Effect_Flame_sheet_14
+    21300030: Effect_Flame_sheet_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Effect_Flame_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 197
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 196
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 199
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 199
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 136
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 136
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 136
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 136
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 72
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 72
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 72
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 71
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 7
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 8
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 9
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Effect_Flame_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 10
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

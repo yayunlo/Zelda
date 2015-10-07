@@ -425,6 +425,10 @@ Prefab:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 106912, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80d02d7a5fedc4a39a6d9d0dcfd4327b, type: 2}
   m_IsPrefabParent: 0
@@ -757,6 +761,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5cd7c35a461ec449b484b8a858f91c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &982160696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982160688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c34c0976cfc8df4b84a6c7ef906cb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePrefab: {fileID: 137154, guid: c86bf2658d232064a959aa4a31c3dc2c, type: 2}
 --- !u!1001 &1054055165
 Prefab:
   m_ObjectHideFlags: 0
@@ -1116,6 +1132,10 @@ Prefab:
       propertyPath: bombPrefab
       value: 
       objectReference: {fileID: 152736, guid: 96eb1196db12e2e46ac8e780bf914ce2, type: 2}
+    - target: {fileID: 161060, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96fe0ee61c56c49e0975a6f8892f785f, type: 2}
   m_IsPrefabParent: 0
